@@ -1,0 +1,56 @@
+.wrap{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-image: url('../../shared/assets/img/bany.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 25px;
+}
+.buttonMore{
+  padding: 10px;
+  height: 60px;
+  color: #ECE7E4;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 600;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.buttonMore:hover{
+  background-color: #ECE7E4;
+  color: black;
+ 
+}
+.button{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 400;
+  background-color: #ba9a7a;
+  border-color: transparent;
+  border-style: solid;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.button:hover{
+ opacity: 85%;
+}
+.block{
+  font-weight: 700;
+   padding: 15px;
+   padding-left: 0;
+   margin-bottom: 15px;
+   color: #ECE7E4;
+ }
+ .title{
+  font-size: 22px;
+  margin-bottom: 10px;
+ }

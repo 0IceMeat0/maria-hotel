@@ -1,0 +1,54 @@
+.footer{
+  background-color: #000000;
+  margin-top: 25px;
+  color: #ffffff;
+  height: 250px;
+ 
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  padding: 10px;
+  width: 90%;
+  height: 25%;
+  color: #ECE7E4;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 600;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.button:hover{
+  background-color: #ECE7E4;
+  color: black;
+ 
+}
+.footerinfo{
+  width: 90%;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.title{
+  padding: 25px;
+  padding-bottom: 15px;
+  text-decoration: underline;
+}
+.navList{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-bottom: 25px;
+
+}
+.item{
+  width: 50%;
+  padding: 5px;
+}
