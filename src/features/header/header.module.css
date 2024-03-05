@@ -74,8 +74,8 @@
   align-items: flex-end;
   border-radius: 8px;
   text-size-adjust: auto;
-    transform-origin: center center;
-    line-height: 9px;
+  transform-origin: center center;
+  line-height: 9px;
 }
 .item{
   width: 25%;
@@ -111,10 +111,10 @@ height: 25px;
   width: 56%;
 }
 .item:nth-child(3n) .icon{
-  width: 46%;
+  width: 52%;
 }
 .item:nth-child(2n) .icon{
-  width: 46%;
+  width: 52%;
 }
 .item:last-child .icon{
   width: 80%;

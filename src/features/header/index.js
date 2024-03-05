@@ -20,7 +20,7 @@ const Header = () => {
           <img src={mount} className={styles.icon} alt='icon'/><div className={styles.iconBlock}>До центра города 10мин</div>
             </li>
             <li className={styles.item}>
-            <img src={tree} className={styles.icon}  alt='icon'/><div className={styles.iconBlock}>Эко-номер из сибирского леса</div>
+            <img src={tree} className={styles.icon}  alt='icon'/><div className={styles.iconBlock}>Эко-номер из <br></br>сибирского леса</div>
             </li>
             <li className={styles.item}>
             <img src={wood} className={styles.icon} alt='icon'/><div className={styles.iconBlock}>сосны на территории</div>
