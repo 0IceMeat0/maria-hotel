@@ -71,21 +71,33 @@
   display: flex;
   margin-bottom: 15px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   border-radius: 8px;
+  text-size-adjust: auto;
+    transform-origin: center center;
+    line-height: 9px;
 }
 .item{
   width: 25%;
   font-size: 9px;
   font-weight: 700;
   margin-right: 12px;
+  
 }
 .item:first-child{
-  margin-left: 15px;
+  margin-left: 10px;
   
 }
 .item:last-child{
   margin-right: 0;
+  
+}
+.item:nth-child(3n-1) .iconBlock{
+  width: 80px;
+  
+}
+.item:nth-child(3n) .iconBlock{
+  width: 80px;
   
 }
 .iconBlock{
@@ -94,4 +106,16 @@ height: 25px;
 
 .icon{
   width: 60%;
+}
+.item:first-child .icon{
+  width: 56%;
+}
+.item:nth-child(3n) .icon{
+  width: 46%;
+}
+.item:nth-child(2n) .icon{
+  width: 46%;
+}
+.item:last-child .icon{
+  width: 80%;
 }
