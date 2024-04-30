@@ -44,8 +44,9 @@ const AboutUs = () => {
   src="https://yandex.ru/map-widget/v1/?ll=92.891336%2C56.015638&mode=whatshere&whatshere%5Bpoint%5D=92.891187%2C56.015250&whatshere%5Bzoom%5D=17&z=17.98"
   width="100%"
   height="400"
-  allowFullScreen="true"
+  allowFullScreen={true}
   style={{ position: 'relative' }}
+  
 ></iframe>
     </div>
     </div>

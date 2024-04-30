@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './footer.module.css';
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
           <li className={styles.item}><a href="#contacts">Контакты</a></li>
         </ul>
         <div className={styles.wrap}>
-        <button className={styles.button}>Забронировать</button>
+        <Link className={styles.button} to='/qrcode'>Забронировать</Link>
         <div className={styles.footerinfo}>2023 - 2024 © Корпорация Maria Hotel. Все права защищены. Конфиденциальная информация, являющаяся собственностью корпорации Maria Hotel</div>
         </div>
         </div>
