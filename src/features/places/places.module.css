@@ -1,7 +1,7 @@
 .wrap{
   display: flex;
   flex-direction: column;
-  padding: 25px
+  padding: 25px;
 }
 .header{
   display: flex;
@@ -33,4 +33,12 @@
 }
 .button:first-child .strelka {
   transform: rotate(180deg);
+}
+@media(min-width: 981px) {
+  .wrap{
+    align-items: center;
+  }
+.blockButtons{
+  margin-left: 450px;
+}
 }

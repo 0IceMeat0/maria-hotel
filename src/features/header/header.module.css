@@ -1,6 +1,6 @@
 .block {
   position: relative;
-  background-image: url('../../shared/assets/img/logo2h.jpg');
+  background-image: url('../../shared/assets/img/forest.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,6 +36,7 @@
 .title{
   margin: auto;
   margin-top: 130px;
+  color: white;
 }
 .wrap{
   display: flex;
@@ -118,4 +119,46 @@ height: 25px;
 }
 .item:last-child .icon{
   width: 80%;
+}
+.linkBlock{
+  display: none;
+ 
+}
+@media (min-width: 500px) and (max-width: 980px) {
+  .button{
+    width: 450px;
+    margin-bottom: 10%;
+  }
+  .list{
+    width: 450px;
+   
+  }
+}
+@media(min-width: 981px) {
+  .button{
+    width: 450px;
+    margin-bottom: 15px;
+  }
+  .list{
+    width: 650px;
+    margin-bottom: 3%;
+  }
+  .wrap{
+    flex-direction: column;
+  }
+}
+
+@media(min-width: 981px) {
+  .linkBlock{
+    display: flex;
+    justify-content: center;
+   
+  }
+.link{
+color: #ffffff;
+width: 200px;
+margin: 5%;
+margin-top: 15px;
+margin-bottom: 0;
+}
 }

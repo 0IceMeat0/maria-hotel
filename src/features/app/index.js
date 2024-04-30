@@ -29,6 +29,7 @@ function App() {
   };
   return (
     <div className={styles.wrap}>
+      
       <button className={`${styles.button} ${isModalOpenMenu ? styles.hidden : ''}`} onClick={openModal}>
   <img src={menu} className={styles.img} alt=''/>
   {isModalOpenMenu && (

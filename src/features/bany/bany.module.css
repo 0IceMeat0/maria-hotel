@@ -54,3 +54,67 @@
   font-size: 22px;
   margin-bottom: 10px;
  }
+ .flexButtons{
+  display: flex;
+  flex-direction: column;
+ }
+ @media (min-width: 500px) and (max-width: 980px) {
+  .wrap{
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+    background-image: url('../../shared/assets/img/bany.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 25px;
+  }
+.titledoprow{
+  position: relative;
+  left: 50px;
+}
+.buttonMore{
+  width: 250px;
+}
+.button{
+  width: 250px;
+}
+}
+@media(min-width: 981px) {
+  .wrap {
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .wrap{
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+.titledoprow{
+  position: relative;
+  left: 50px;
+}
+.buttonMore{
+  width: 250px;
+}
+.button{
+  width: 250px;
+}
+.flexButtons{
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+ }
+ .title{
+  font-size: 35px;
+  margin-bottom: 10px;
+ }
+ .titledoprow{
+  position: relative;
+  left: 0;
+  font-size: 20px;
+}
+
+}

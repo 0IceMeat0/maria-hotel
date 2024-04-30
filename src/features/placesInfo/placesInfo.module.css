@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   font-size: 22px;
-
+  margin-top: 20px;
 }
 .title{
  font-weight: 700;
@@ -16,36 +16,13 @@
   padding-left: 0;
   padding-top: 0;
 }
-.img1{
-  width: 220px;
-  top: 40px;
-  position: absolute;
-  z-index: 2;
-}
-.img3{
-  width: 139px;
-  top: 200px;
-  right: 60px;
-  position: absolute;
-  z-index: 3;
-}
-.img2{
-  width: 109px;
- right: 35px;
-  position: absolute;
-  z-index: 1;
-}
-.img4{
-  width: 126px;
-  top: 190px;
-right: 35px;
-  position: absolute;
-  z-index: 1;
+.img{
+margin: 15px;
+width: 90%;
 }
 .blockImg{
   display: block;
   height: 350px;
-  position: relative;
 }
 .moreFoto{
   color: #ffffff;
@@ -58,7 +35,103 @@ right: 35px;
   height: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 .moreFoto:hover{
  opacity: 85%;
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .img{
+    display: none;
+  }
+  
+  .wrap{
+    flex-direction: row;
+     height: 250px;
+  justify-content: center;
+  
+   }
+.moreFoto{
+width: 350px;
+
+}
+.imgCss1{
+  
+  background-image: url('../../shared/assets/img/house.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  margin-left: 26px;
+}
+.imgCss2{
+
+  background-image: url('../../shared/assets/img/room.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  margin-left: 26px;
+}
+.imgCss3{
+
+  background-image: url('../../shared/assets/img/room3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  margin-left: 26px;
+}
+
+}
+
+
+
+@media(min-width: 981px) {
+  .img{
+    display: none;
+  }
+  .imgCss1{
+  
+    background-image: url('../../shared/assets/img/house.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    margin-left: 26px;
+  }
+  .imgCss2{
+  
+    background-image: url('../../shared/assets/img/room.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    margin-left: 26px;
+  }
+  .imgCss3{
+  
+    background-image: url('../../shared/assets/img/room3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    margin-left: 26px;
+  }
+  .wrap{
+   flex-direction: row;
+    height: 250px;
+justify-content: center;
+
+  }
+  .moreFoto{
+  width: 350px;
+  
+  }
 }

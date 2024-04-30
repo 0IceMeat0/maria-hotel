@@ -39,3 +39,27 @@
   position: absolute;
   bottom: 25px;
 }
+.linkBlock{
+  display: none;
+}
+@media(min-width: 981px) {
+  .button{
+    width: 450px;
+    margin-bottom: 15px;
+  }
+  .list{
+    width: 650px;
+    margin-bottom: 3%;
+  }
+  .wrap{
+    flex-direction: column;
+  }
+}
+
+@media(min-width: 981px) {
+
+.button{
+  display: none ;
+}
+
+}
