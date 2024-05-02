@@ -17,6 +17,7 @@
   padding-top: 0;
 }
 .img{
+border-radius: 5px;
 margin: 15px;
 width: 90%;
 }
@@ -56,7 +57,7 @@ width: 350px;
 
 }
 .imgCss1{
-  
+  border-radius: 5px;
   background-image: url('../../shared/assets/img/house.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -66,7 +67,7 @@ width: 350px;
   margin-left: 26px;
 }
 .imgCss2{
-
+  border-radius: 5px; 
   background-image: url('../../shared/assets/img/room.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +77,7 @@ width: 350px;
   margin-left: 26px;
 }
 .imgCss3{
-
+  border-radius: 5px;
   background-image: url('../../shared/assets/img/room3.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -95,7 +96,7 @@ width: 350px;
     display: none;
   }
   .imgCss1{
-  
+    border-radius: 5px;
     background-image: url('../../shared/assets/img/house.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +106,7 @@ width: 350px;
     margin-left: 26px;
   }
   .imgCss2{
-  
+    border-radius: 5px;
     background-image: url('../../shared/assets/img/room.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -115,7 +116,7 @@ width: 350px;
     margin-left: 26px;
   }
   .imgCss3{
-  
+    border-radius: 5px;
     background-image: url('../../shared/assets/img/room3.png');
     background-position: center;
     background-repeat: no-repeat;

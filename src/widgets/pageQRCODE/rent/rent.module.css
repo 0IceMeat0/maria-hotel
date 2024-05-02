@@ -1,0 +1,13 @@
+.wrap{
+  margin-top: 25px;
+  width: 90%;
+  height: 2500px;
+}
+.title{
+  margin-bottom: 10px;
+}
+.block{
+  border-radius: 15px; 
+  overflow: hidden;
+  
+}

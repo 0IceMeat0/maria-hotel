@@ -20,7 +20,7 @@ const BlockWifi = () => {
     <div className={styles.wrap}>
         <h3 className={styles.title}>Подключение к WIFI</h3>
          <div className={styles.text}>Сеть: $@@$%%#</div>
-         <div className={styles.text}>Пароль: <span className={styles.bold}>";"%!%;!;</span></div>
+         <div className={styles.text}>Пароль: <span className={styles.bold}>{password}</span></div>
          <button className={styles.button} onClick={copyToClipboard}>
         {world}
       </button>
