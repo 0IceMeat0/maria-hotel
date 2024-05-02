@@ -1,7 +1,7 @@
 import styles from './placesInfo.module.css';
 import house from '../../shared/assets/img/house.png'
-import room from '../../shared/assets/img/room.jpg'
-import room3 from '../../shared/assets/img/room3.jpg'
+import room from '../../shared/assets/img/room.png'
+import room3 from '../../shared/assets/img/room3.png'
 
 const PlacesInfo = ({ value }) => {
   if(value === 1){

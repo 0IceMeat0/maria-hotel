@@ -31,7 +31,7 @@
 }
 .buttonSpoiler{
   margin-top: 10px;
-  margin-bottom: 10px;
+
 }
 .spoiler{
   background-color: #EAEAEA;
@@ -39,4 +39,5 @@
   padding: 10px;
   border-radius: 7px;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  margin-top: 10px;
 }
