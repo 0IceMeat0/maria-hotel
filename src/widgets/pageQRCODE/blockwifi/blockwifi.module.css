@@ -31,7 +31,6 @@
 }
 .buttonSpoiler{
   margin-top: 10px;
-
 }
 .spoiler{
   background-color: #EAEAEA;
@@ -40,4 +39,7 @@
   border-radius: 7px;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   margin-top: 10px;
+}
+.button:hover{
+  opacity: 90%;
 }
