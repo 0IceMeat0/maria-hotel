@@ -1,0 +1,20 @@
+.button{
+    color: #ffffff;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 400;
+    background-color: #ba9a7a;
+    border-color: transparent;
+    border-style: solid;
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .title{
+    margin-bottom: 10px;
+  }
+  .img{
+    width: 80px;
+    height: 80px;
+  }
