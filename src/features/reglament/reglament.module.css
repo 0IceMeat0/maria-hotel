@@ -22,7 +22,6 @@
     display: inline;
     height: 300px;
     position: relative;
-    bottom: 25px;
     right: 25px;
    }
    .wrap{
@@ -35,8 +34,11 @@
      padding-left: 0;
      font-size: 25px;
    }
-   .block {
-  margin-left: 8%;
+   .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 }
 @media(min-width: 981px) {

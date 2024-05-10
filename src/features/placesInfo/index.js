@@ -37,7 +37,7 @@ const PlacesInfo = ({ value }) => {
 
   return (
     <div className={styles.wrap}>
-      <div>
+      <div className={styles.block}>
         <div className={styles.title}>
           <div>{title.split('\n').map((line, index) => <div key={index}>{line}</div>)}</div>
         </div>

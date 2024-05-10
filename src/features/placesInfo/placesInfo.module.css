@@ -45,6 +45,10 @@ width: 90%;
   .img{
     display: none;
   }
+  .block{
+    width: 370px;
+
+  }
   
   .wrap{
     flex-direction: row;
@@ -95,6 +99,10 @@ width: 350px;
   .img{
     display: none;
   }
+  .block{
+    width: 370px;
+
+  }
   .imgCss1{
     border-radius: 5px;
     background-image: url('../../shared/assets/img/house.png');
@@ -135,4 +143,8 @@ justify-content: center;
   width: 350px;
   
   }
+
 }
+
+
+
