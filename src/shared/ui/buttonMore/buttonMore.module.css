@@ -30,6 +30,7 @@
   }
   
   .buttonNext:first-child{
+    margin-left: 0;
     margin-right: 15px;
   transform: rotate(180deg);
   }
@@ -63,13 +64,16 @@
 @media (max-width: 600px) {
   .img{
     width: 250px;
-    height: 50%;
+    height: 230px;
   }
 }
 
 
-@media (min-width: 500px) and (max-width: 980px) {
-
+@media (min-width: 600px) and (max-width: 980px) {
+  .img{
+    width: 350px;
+    height: 60%;
+  }
 .buttonMore{
   width: 250px;
 }
@@ -80,5 +84,8 @@
 .buttonMore{
   width: 250px;
 }
-
+.img{
+  width: 650px;
+  height: 100%;
+}
 }

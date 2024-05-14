@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../modal/modal';
 import styles from './buttonMore.module.css';
-import dom from '../../assets/img/happyWoman.png'
+import dom from '../../assets/img/bag.png'
 import dom2 from '../../assets/img/house.png'
 import dom3 from '../../assets/img/room.png'
 import strelka from '../../assets/icons/strelka.png'
