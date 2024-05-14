@@ -71,7 +71,19 @@
   bottom: 250px;
 }
 @media (max-width: 600px) {
-  .closeButtonFoto{
-    bottom: 150px;
+  .modalFoto {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin-right: 20px;
+  }
+
+  .closeButtonFoto {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
   }
 }

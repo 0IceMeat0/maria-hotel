@@ -34,7 +34,6 @@ const ButtonMore = ({className}) => {
     3: dom3
   };
 
-console.log(className);
   return (
     <div>
       <button className={className ? styles.button : styles.buttonMore} onClick={openModal}>
