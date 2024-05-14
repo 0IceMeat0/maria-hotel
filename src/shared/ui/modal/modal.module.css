@@ -57,3 +57,21 @@
   opacity: 1;
   transform: scale(1);
 }
+.modalFoto{
+  width: 90%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.closeButtonFoto{
+  padding: 10px;
+  position: relative;
+  bottom: 250px;
+}
+@media (max-width: 600px) {
+  .closeButtonFoto{
+    bottom: 150px;
+  }
+}

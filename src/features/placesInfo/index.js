@@ -32,7 +32,7 @@ const PlacesInfo = ({ value }) => {
   if (!config) {
     return null; 
   }
-  const arrForButtonMore = [1214214, 2, 3];
+
   const { title, body, imgSrc, imgClassName } = config;
 
   return (
@@ -45,7 +45,7 @@ const PlacesInfo = ({ value }) => {
           {body.split('\n').map((line, index) => <div key={index}>{line}</div>)}
         </div>
         <img src={imgSrc} className={imgClassName} alt='' />
-        <ButtonMore list={arrForButtonMore} className={styles.moreFoto}>Смотреть фото</ButtonMore>
+        <ButtonMore  className={styles.moreFoto}>Смотреть фото</ButtonMore>
       </div>
       <div className={styles[`imgCss${value}`]}></div>
     </div>

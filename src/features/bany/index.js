@@ -1,3 +1,4 @@
+import ButtonMore from '../../shared/ui/buttonMore/buttonMore';
 import styles from './bany.module.css';
 const Bany = () => {
   
@@ -9,7 +10,7 @@ const Bany = () => {
   <div className={styles.titledoprow}>с бассейном</div>
   </div>
   <div className={styles.flexButtons}>
-  <button className={styles.buttonMore}>Смотреть фото</button>
+  <ButtonMore>Смотреть фото</ButtonMore>
   <button className={styles.button}>Забронировать</button>
   </div>
 </div>

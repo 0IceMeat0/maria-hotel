@@ -4,7 +4,7 @@ import styles from './modal.module.css';
 import close from '../../assets/icons/close.png';
 import closewhite from '../../../shared/assets/icons/closewhite.png';
 
-const Modal = ({ onClose, children, menu }) => {
+const Modal = ({ onClose, children, menu, className}) => {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -24,9 +24,14 @@ const Modal = ({ onClose, children, menu }) => {
           {children}
         </div>
       ) : (
-        <div className={`${styles.modal} ${isActive && styles.active}`} onClick={(e) => e.stopPropagation()}>
-          <button className={styles.closeButton} onClick={handleClose}><img className={styles.img} src={close} alt='Закрыть'/></button>
+        <div className={`${className ? styles.modalFoto : styles.modal} ${isActive && styles.active}`} onClick={(e) => e.stopPropagation()}>
+         
           {children}
+           {className ?
+           <button className={styles.closeButtonFoto} onClick={handleClose}><img className={styles.img} src={closewhite} alt='Закрыть'/></button>
+           :
+            <button className={styles.closeButton} onClick={handleClose}><img className={styles.img} src={close} alt='Закрыть'/></button>
+          }
         </div>
       )}
     </div>,
