@@ -1,29 +1,32 @@
 import styles from './aboutUs.module.css';
-import vk from '../../shared/assets/icons/vk.png';
-import insta from '../../shared/assets/icons/insta.png';
-import whatsapp from '../../shared/assets/icons/whatsapp.png';
-import telegram from '../../shared/assets/icons/telegram.png';
+import vk from '../../shared/assets/icons/vk.svg';
+import insta from '../../shared/assets/icons/instagram.svg';
+import whatsapp from '../../shared/assets/icons/whatsapp.svg';
+import telegram from '../../shared/assets/icons/telegram.svg';
 
 const AboutUs = () => {
 
   return(
     <div id="contacts" className={styles.wrap}>
+      <div className={styles.block}>
+        <div>
       <div className={styles.titlePage}>Жизнь в Maria Hotel</div>
 
 <div className={styles.buttonContainer}>
   <button className={styles.button}><img src={vk} className={styles.vk} alt='vk'/> Подписаться</button>
   <button className={styles.button}><img src={insta} className={styles.insta} alt='insta'/> Подписаться</button>
 </div>
-
+</div>
 <div className={styles.contactInfo}>
-  <div className={styles.titlePage}>Контакты</div>
+  <div className={styles.titleBlock}>Контакты</div>
   <div className={styles.address}>г. Чикиряу, ул. Лермонтова 228</div>
   <h2 className={styles.phoneNumber}>8 800 890 8900</h2>
-</div>
+
 
 <div className={styles.socialLinks}>
   <a href='#1' className={styles.link}><img src={telegram} className={styles.telegram} alt='telegram'/>  <div className={styles.linkText}>Telegram</div></a>
   <a href='#1' className={styles.link}><img src={whatsapp} className={styles.whatsapp} alt='whatsapp'/> <div className={styles.linkText}>WhatsApp</div></a>
+</div>
 </div>
       <div style={{ position: 'relative', overflow: 'hidden' }}>
       <a
@@ -38,6 +41,8 @@ const AboutUs = () => {
       >
         Улица Ленина, 20 — Яндекс Карты
       </a>
+      </div>
+      </div>
       <iframe
       className={styles.iframe}
   title="Yandex Map"
@@ -48,7 +53,6 @@ const AboutUs = () => {
   style={{ position: 'relative' }}
   
 ></iframe>
-    </div>
     </div>
   );
 }
