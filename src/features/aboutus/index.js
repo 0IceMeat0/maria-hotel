@@ -16,33 +16,22 @@ const AboutUs = () => {
   <button className={styles.button}><img src={vk} className={styles.vk} alt='vk'/> Подписаться</button>
   <button className={styles.button}><img src={insta} className={styles.insta} alt='insta'/> Подписаться</button>
 </div>
+
 </div>
 <div className={styles.contactInfo}>
-  <div className={styles.titleBlock}>Контакты</div>
+  <h2 className={styles.titleBlock}>Контакты</h2>
   <div className={styles.address}>г. Чикиряу, ул. Лермонтова 228</div>
-  <h2 className={styles.phoneNumber}>8 800 890 8900</h2>
+  <a className={styles.phoneNumber} href="tel:89884702074">8-988-470-20-74</a>
 
 
 <div className={styles.socialLinks}>
   <a href='#1' className={styles.link}><img src={telegram} className={styles.telegram} alt='telegram'/>  <div className={styles.linkText}>Telegram</div></a>
   <a href='#1' className={styles.link}><img src={whatsapp} className={styles.whatsapp} alt='whatsapp'/> <div className={styles.linkText}>WhatsApp</div></a>
 </div>
+
 </div>
-      <div style={{ position: 'relative', overflow: 'hidden' }}>
-      <a
-        href="https://yandex.ru/maps/62/krasnoyarsk/?utm_medium=mapframe&utm_source=maps"
-        style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '0px' }}
-      >
-        Красноярск
-      </a>
-      <a
-        href="https://yandex.ru/maps/62/krasnoyarsk/house/ulitsa_lenina_20/bUsYfg5hSUIEQFtsfXxwdH9hbQ==/?ll=92.891336%2C56.015638&utm_medium=mapframe&utm_source=maps&z=17.98"
-        style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '14px' }}
-      >
-        Улица Ленина, 20 — Яндекс Карты
-      </a>
       </div>
-      </div>
+      <div className={styles.titleIframe}>Расположение</div>
       <iframe
       className={styles.iframe}
   title="Yandex Map"
@@ -53,6 +42,8 @@ const AboutUs = () => {
   style={{ position: 'relative' }}
   
 ></iframe>
+
+
     </div>
   );
 }

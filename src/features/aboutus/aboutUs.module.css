@@ -14,12 +14,15 @@
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
+  font-family: 'PT bold';
 }
 .titleBlock {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
+  font-family: 'PT bold';
+
 }
 .buttonContainer {
   margin-bottom: 20px;
@@ -47,12 +50,16 @@
 
 .phoneNumber{
   margin-top: 0;
-  color: #BA9A7A;
+
+  font-size: 25px;
+  font-family: 'PT bold';
+
 }
 .socialLinks a {
   margin-right: 10px;
   color: #5F5144;
   text-decoration: none;
+  margin-top: 25px;
 }
 .socialLinks{
 display: flex;
@@ -74,6 +81,7 @@ margin-bottom: 15px;
 .insta{
   width: 40px;
   height: 40px;
+ 
 }
 .whatsapp{
   width: 30px;
@@ -84,6 +92,11 @@ margin-bottom: 15px;
   width: 30px;
   height: 30px;
   margin-right: 5px;
+}
+.titleIframe{
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-family: 'PT bold';
 }
 @media(min-width: 981px) {
 .wrap{
@@ -112,6 +125,7 @@ align-items: center;
   margin-right: 0;
 }
 .address{
+  padding-top: 10px;
   margin-bottom: 5px;
 }
 .iframe{
@@ -119,5 +133,11 @@ align-items: center;
 }
 .phoneNumber{
   margin-bottom: 25px;
+
+}
+.titleIframe{
+  display: none;
 }
 }
+
+
