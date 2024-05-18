@@ -41,18 +41,15 @@ width: 90%;
 .moreFoto:hover{
  opacity: 85%;
 }
-.loader{
-  border-radius: 5px;
- 
-  width: 30%;
+.imageContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-top: 100px;
-  margin-bottom: 120px;
+  position: relative;
+}
+.loader{
+  width: 20%;
   position: absolute;
-  left: 35%;
 }
 
 @media (min-width: 600px) and (max-width: 980px) {

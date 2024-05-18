@@ -3,7 +3,7 @@ import house from '../../shared/assets/img/house.png';
 import room from '../../shared/assets/img/room.png';
 import room3 from '../../shared/assets/img/room3.png';
 import ButtonMore from '../../shared/ui/buttonMore/buttonMore';
-import loader from '../../shared/assets/icons/loader.gif';
+import loader from '../../shared/assets/icons/loaderWhite.gif';
 import { useState, useEffect } from 'react';
 
 const placeConfig = {

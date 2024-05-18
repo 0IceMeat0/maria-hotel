@@ -5,7 +5,7 @@ import dom from '../../assets/img/bag.png';
 import dom2 from '../../assets/img/house.png';
 import dom3 from '../../assets/img/room.png';
 import strelka from '../../assets/icons/strelka.png';
-import loader from '../../assets/icons/loader.gif'; // Добавьте иконку загрузки
+import loader from '../../assets/icons/loaderWhite.gif';
 
 const ButtonMore = ({ className, obj }) => {
   const [isModalOpen, setModalOpen] = useState(false);
