@@ -93,3 +93,14 @@
   opacity: 0.5; /* Пример стиля для уменьшенной непрозрачности */
   pointer-events: none; /* Отключить взаимодействие с элементом */
 }
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img.hidden {
+  display: none;
+}

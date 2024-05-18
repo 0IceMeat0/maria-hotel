@@ -1,14 +1,16 @@
-import{ useState } from 'react';
+import { useState } from 'react';
 import Modal from '../modal/modal';
 import styles from './buttonMore.module.css';
 import dom from '../../assets/img/bag.png';
 import dom2 from '../../assets/img/house.png';
 import dom3 from '../../assets/img/room.png';
 import strelka from '../../assets/icons/strelka.png';
+import loader from '../../assets/icons/loader.gif'; // Добавьте иконку загрузки
 
 const ButtonMore = ({ className, obj }) => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [numberFoto, setNumberFoto] = useState(1);
+  const [loading, setLoading] = useState(true);
 
   const openModal = () => {
     setModalOpen(true);
@@ -21,13 +23,19 @@ const ButtonMore = ({ className, obj }) => {
   const handleNumberMinus = () => {
     if (numberFoto > 1) {
       setNumberFoto(numberFoto - 1);
+      setLoading(true);
     }
   };
 
   const handleNumberPlus = () => {
     if (numberFoto < Object.keys(obj).length) {
       setNumberFoto(numberFoto + 1);
+      setLoading(true);
     }
+  };
+
+  const handleImageLoad = () => {
+    setLoading(false); 
   };
 
   if (!obj) {
@@ -52,7 +60,15 @@ const ButtonMore = ({ className, obj }) => {
           >
             <img src={strelka} className={styles.strelka} alt='prev' />
           </button>
-          <img className={styles.img} src={obj[numberFoto]} alt="Фото" />
+          <div className={styles.imageContainer}>
+            {loading && <img className={styles.loader} src={loader} alt="Загрузка" />} {/* Индикатор загрузки */}
+            <img
+              className={`${styles.img} ${loading ? styles.hidden : ''}`} 
+              src={obj[numberFoto]} 
+              alt="Фото" 
+              onLoad={handleImageLoad} 
+            />
+          </div>
           <button
             className={`${styles.buttonNext} ${numberFoto === Object.keys(obj).length ? styles.disabled : ''}`}
             onClick={handleNumberPlus}
