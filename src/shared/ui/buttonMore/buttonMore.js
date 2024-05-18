@@ -60,8 +60,8 @@ const ButtonMore = ({ className, obj }) => {
           >
             <img src={strelka} className={styles.strelka} alt='prev' />
           </button>
-          <div className={styles.imageContainer}>
-            {loading && <img className={styles.loader} src={loader} alt="Загрузка" />} {/* Индикатор загрузки */}
+          <div className={loading ? styles.imageContainer : styles.imageContainerLoader}>
+              {loading && <img className={styles.loader} src={loader} alt="Загрузка" />}
             <img
               className={`${styles.img} ${loading ? styles.hidden : ''}`} 
               src={obj[numberFoto]} 
