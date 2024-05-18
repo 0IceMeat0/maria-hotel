@@ -98,6 +98,9 @@ margin-bottom: 15px;
   font-size: 22px;
   font-family: 'PT bold';
 }
+.button:hover{
+  opacity: 90%;
+ }
 @media(min-width: 981px) {
 .wrap{
 display: flex;

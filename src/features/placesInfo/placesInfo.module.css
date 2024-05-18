@@ -41,6 +41,20 @@ width: 90%;
 .moreFoto:hover{
  opacity: 85%;
 }
+.loader{
+  border-radius: 5px;
+ 
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 100px;
+  margin-bottom: 120px;
+  position: absolute;
+  left: 35%;
+}
+
 @media (min-width: 600px) and (max-width: 980px) {
   .img{
     display: none;
@@ -49,7 +63,9 @@ width: 90%;
     width: 370px;
 
   }
-  
+  .loader{
+   display: none;
+  }
   .wrap{
     flex-direction: row;
      height: 250px;
@@ -103,6 +119,9 @@ width: 350px;
     width: 370px;
 
   }
+  .loader{
+    display: none;
+   }
   .imgCss1{
     border-radius: 5px;
     background-image: url('../../shared/assets/img/house.png');
