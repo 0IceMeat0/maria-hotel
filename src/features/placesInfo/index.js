@@ -65,7 +65,8 @@ const PlacesInfo = ({ value }) => {
         </div>
         <ButtonMore className={styles.moreFoto}>Смотреть фото</ButtonMore>
       </div>
-      <div className={styles[`imgCss${value}`]}></div>
+     
+      <div className={styles[`imgCss${value}`]}>{loading && <img className={styles.loader2} src={loader} alt="Загрузка" />}</div>
     </div>
   );
 };
