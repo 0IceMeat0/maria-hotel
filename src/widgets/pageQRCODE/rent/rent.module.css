@@ -11,3 +11,64 @@
   overflow: hidden;
   
 }
+.linkFoto{
+  height: 220px;
+
+}
+.link{
+
+  height: 190px;
+  display: flex;
+
+  align-items: center;
+  background-color: #C9BCAF;
+  color: #ffffff;
+}
+.linkTitleFirst{
+  font-family: 'PT bold';
+  font-size: 22px;
+  margin-left: 14px;
+  margin-right: 14px;
+
+  font-size: 20px; 
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+.linkTitleSecond{
+  font-size: 20px;
+  font-family: 'PT bold';
+  margin-left: 14px;
+  margin-right: 14px;
+
+  font-size: 20px; 
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+
+
+.linkFotoZOO{
+  height: 295px;
+  position: relative;
+  bottom: 35px;
+  margin: auto;
+}
+
+.linkText {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  text-align: center;
+  font-size: 20px; 
+  font-weight: bold; 
+  text-shadow: 1px 1px 2px black; 
+ 
+}
+.linkFotoForest{
+  height: 385px;
+  position: relative;
+  top: 0;
+  margin: auto;
+}

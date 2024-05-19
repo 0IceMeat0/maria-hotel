@@ -3,6 +3,8 @@ import Main from '../../widgets/pageQRCODE/main';
 import {
   createBrowserRouter,
 } from 'react-router-dom';
+import DinamicArendaComponent from '../../widgets/pageQRCODE/rent/dunamicPage';
+
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +18,13 @@ export const router = createBrowserRouter([
         index: true,
         element: <Main />
       },
-      
+      {
+        path: ':id',
+        element: <DinamicArendaComponent />
+      }
     ]
   },
 ]);
+
+
+
