@@ -66,7 +66,7 @@ const ButtonMore = ({ className, obj }) => {
               className={`${styles.img} ${loading ? styles.hidden : ''}`} 
               src={obj[numberFoto]} 
               alt="Фото" 
-              onLoad={handleImageLoad} 
+              onLoad={handleImageLoad}
             />
           </div>
           <button
