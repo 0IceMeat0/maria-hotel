@@ -16,10 +16,10 @@
 
 }
 .link{
-
+  text-shadow: 1px 1px 2px gray;
   height: 190px;
   display: flex;
-
+  
   align-items: center;
   background-color: #C9BCAF;
   color: #ffffff;
@@ -32,7 +32,7 @@
 
   font-size: 20px; 
   font-weight: bold;
-  text-shadow: 1px 1px 2px black;
+
 }
 .linkTitleSecond{
   font-size: 20px;
@@ -42,7 +42,7 @@
 
   font-size: 20px; 
   font-weight: bold;
-  text-shadow: 1px 1px 2px black;
+
 }
 
 
@@ -63,7 +63,7 @@
   text-align: center;
   font-size: 20px; 
   font-weight: bold; 
-  text-shadow: 1px 1px 2px black; 
+
  
 }
 .linkFotoForest{
@@ -71,4 +71,14 @@
   position: relative;
   top: 0;
   margin: auto;
+}
+
+
+@media(min-width: 981px) {
+
+  .link{
+
+    text-shadow: 1px 1px 2px black;
+
+  }
 }

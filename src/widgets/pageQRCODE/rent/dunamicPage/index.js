@@ -29,7 +29,7 @@ const DinamicArendaComponent = () => {
 
   return (
     <div className={styles.wrap}>
-      <h2 className={styles.title}>{item.title}</h2>
+      <h2 className={styles.title}>{item.mainTitle}</h2>
       <img className={styles.image} src={item.imageUrl} alt={item.title} />
       <p className={styles.description}>{item.description}</p>
     </div>
