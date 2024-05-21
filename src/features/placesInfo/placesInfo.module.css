@@ -138,7 +138,9 @@ width: 350px;
     }
   .block{
     width: 370px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .loader{
     display: none;

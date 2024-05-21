@@ -10,7 +10,7 @@ const Rent = () => (
     <h3 className={styles.title}>Чем можно заняться у нас ?</h3>
     <Carousel 
       className={styles.block}
-      // autoplay
+      autoplay
       autoplaySpeed={4000}
       theme={{
         components: {

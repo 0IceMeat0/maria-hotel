@@ -27,7 +27,7 @@
 .buttonContainer {
   margin-bottom: 20px;
   display: flex;
-  
+
 }
 
 .button {
@@ -37,7 +37,6 @@
   color: #fff;
   background-color:#BA9A7A;
   border-radius: 12px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   margin-right: 10px;
@@ -123,9 +122,11 @@ align-items: center;
   margin-bottom: 25px;
   margin-top: 35px;
   gap: 15px;
+
 }
 .button{
   margin-right: 0;
+
 }
 .address{
   padding-top: 10px;

@@ -3,6 +3,8 @@ import BlockWifi from "../blockwifi";
 import HeaderQR from "../headerQR";
 import styles from './main.module.css'
 import Rent from "../rent";
+import FooterQR from "../footerQR";
+import SaleBlock from "../saleBlock";
 const Main = () =>{
 
   return (
@@ -11,6 +13,8 @@ const Main = () =>{
      <BlockWifi />
      <Activities />
      <Rent />
+     <FooterQR />
+     <SaleBlock />
     </div>
   )
 }

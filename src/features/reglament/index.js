@@ -1,12 +1,12 @@
 import Detalis from '../../shared/ui/details';
 import styles from './reglament.module.css';
-import bag from '../../shared/assets/img/bag.png';
+import uslovia from '../../shared/assets/img/uslovia.png';
 const Reglament = () => {
 
   return(
     <div className={styles.wrap} id='ysloviya'>
   
-      <img src={bag} className={styles.bag} alt=''/>
+      <img src={uslovia} className={styles.bag} alt=''/>
   
       <div className={styles.block}>
       <div className={styles.title}>

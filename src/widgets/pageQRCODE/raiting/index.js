@@ -1,5 +1,5 @@
 import styles from './raiting.module.css'
-import lady from '../../../shared/assets/img/happyWoman.png'
+import lady from '../../../shared/assets/img/zlo.jpg'
 const Activities = () => {
 
 

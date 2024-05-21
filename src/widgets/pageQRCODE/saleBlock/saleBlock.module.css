@@ -1,0 +1,26 @@
+.wrap{
+  margin-top: 25px;
+  margin-bottom: 125px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  width: 90%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.button{
+  background-color: #C18617;
+  color: #FFFFFF;
+  padding: 14px 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 18px;
+}
+.title{
+  margin-bottom: 15px;
+}
+.bold{
+  font-size: 14px;
+  font-family: 'PT bold';
+}

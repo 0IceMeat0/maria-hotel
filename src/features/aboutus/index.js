@@ -40,10 +40,7 @@ const AboutUs = () => {
   height="400"
   allowFullScreen={true}
   style={{ position: 'relative' }}
-  
 ></iframe>
-
-
     </div>
   );
 }
