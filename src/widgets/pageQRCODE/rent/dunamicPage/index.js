@@ -4,6 +4,9 @@ import styles from './dunamicPage.module.css';
 import sony from '../../../../shared/assets/img/sony.png'
 import sega from '../../../../shared/assets/img/sega.png'
 import close from '../../../../shared/assets/icons/close.png'
+import kvok from '../../../../shared/assets/img/kvokki.png'
+import foto from '../../../../shared/assets/img/foto.jpg'
+import bag from '../../../../shared/assets/img/bag.png'
 const DynamicArendaComponent = () => {
   const { id } = useParams();
 
@@ -27,42 +30,50 @@ const DynamicArendaComponent = () => {
       ]
     },
     2: {
-      mainTitle: "Другие игровые приставки",
-      titleSony: "",
-      descriptionSony: "",
-      titleSega: "Аренда игровых приставок: Sega",
-      descriptionSega: "Испытайте удовольствие от игры на Sega. Вспомните такие хиты, как Sonic the Hedgehog, Street Fighter II и другие увлекательные игры.",
-      imageSony: "",
+      mainTitle: "Куда можно сходить",
+      titleSony: "Сделай уникальное фото",
+      descriptionSony: "Создайте неповторимое изображение, представляющее вас в образе советского офицера. Почувствуйте себя частью истории и поделитесь этим уникальным моментом с друзьями.",
+      titleSega: "",
+      descriptionSega: "",
+      imageSony: foto,
       imageSega: "",
       moneyTitle: "",
+      money: ""
     },
     3: {
-      mainTitle: "Другие игровые приставки",
-      titleSony: "",
-      descriptionSony: "",
-      titleSega: "Аренда игровых приставок: Sega",
-      descriptionSega: "Испытайте удовольствие от игры на Sega. Вспомните такие хиты, как Sonic the Hedgehog, Street Fighter II и другие увлекательные игры.",
-      imageSony: "",
+      mainTitle: "Аренда инвентаря для туризма",
+      titleSony: "Рюкзак и палатка",
+      descriptionSony: "Совершите незабываемое приключение на природе с нашим набором для туризма, включающим в себя удобный рюкзак и прочную палатку. Готовьтесь к увлекательным путешествиям без лишних забот!",
+      titleSega: "",
+      descriptionSega: "",
+      imageSony: bag,
       imageSega: "",
-      moneyTitle: "",
-    },
+      moneyTitle: "Ценовая политика",
+      money: [
+     'Рюкзак + палатка: 700р в день ',
+     'Рюкзак: 300р в день ',
+     'Палатка: 400р в день'
+    ],
+
+    },    
     4: {
-      mainTitle: "Другие игровые приставки",
-      titleSony: "",
-      descriptionSony: "",
-      titleSega: "Аренда игровых приставок: Sega",
-      descriptionSega: "Испытайте удовольствие от игры на Sega. Вспомните такие хиты, как Sonic the Hedgehog, Street Fighter II и другие увлекательные игры.",
-      imageSony: "",
-      imageSega: "",
-      moneyTitle: "",
+      mainTitle: "Помоги Квоккам",
+      titleSony: "Как ты можешь им помочь",
+      descriptionSony: "Эти милые животные страдают от пожаров, которые уменьшают их популяцию. Поэтому мы просим вас не оставаться равнодушными: разводите костры только в специально отведённых местах и не оставляйте мусор, так как квокки могут его съесть :(",
+      imageSony: kvok,
+      money: ""
     }
   };
+
+
 
   const item = data[id];
   const element = item.arendaList && item.arendaList.map((el, index) => (
     <li key={index} className={styles.itemList}>{el}</li>
   ));
-
+  const arrMoney = item.money.map && item.money.map((el, index) => (
+    <li key={index} className={styles.itemMoney}>{el}</li>
+  ));
   return (
     <div className={styles.wrap}>
       <Link to="/qrcode" className={styles.backLink}><img className={styles.imgLink} src={close} alt=''/></Link>
@@ -70,7 +81,7 @@ const DynamicArendaComponent = () => {
       {item.moneyTitle && (
         <>
         <h3 className={styles.moneyTitle}>{item.moneyTitle}</h3>
-        <div className={styles.moneyDescription}>{item.money}</div>
+        <div className={styles.moneyDescription}>{arrMoney ? arrMoney: item.money }</div>
         </>
       )}
       {item.imageSony && (
