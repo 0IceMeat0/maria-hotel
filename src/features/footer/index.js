@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom';
 import styles from './footer.module.css';
 
 const Footer = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+  
   return (
       <div className={styles.footer}>
         <div className={styles.title}>Maria Hotel</div>
@@ -13,7 +18,9 @@ const Footer = () => {
           <li className={styles.item}><a href="#contacts">Контакты</a></li>
         </ul>
         <div className={styles.wrap}>
-        <Link className={styles.button} to='/qrcode'>Забронировать</Link>
+        <Link className={styles.button} to='/qrcode' onClick={scrollToTop}>
+      Забронировать
+    </Link>
         <div className={styles.footerinfo}>2023 - 2024 © Корпорация Maria Hotel. Все права защищены. Конфиденциальная информация, являющаяся собственностью корпорации Maria Hotel</div>
         </div>
         </div>
