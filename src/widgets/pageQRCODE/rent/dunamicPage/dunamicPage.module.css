@@ -1,24 +1,23 @@
 .wrap {
   width: 100vw;
-  height: 100vh;
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  position: relative;
 }
 
 .title {
-  margin-top: 25px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
+  margin-top: 45px;
+  font-size: 28px;
+  font-family: 'PT bold';
   text-align: center;
 }
 
 .subtitle {
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 20px;
   font-weight: bold;
   color: #555;
@@ -42,12 +41,29 @@
 
 .moneyTitle {
   margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
   color: #444;
   text-align: center;
 }
+.list{
+  margin-top: 15px;
+}
+.itemList{
+  padding: 5px;
+  margin-left: 25px;
+}
+.imgLink{
+  width: 40px;
+  height: 40px;
+}
+.backLink{
 
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
 @media (min-width: 600px) {
   .wrap {
     width: 400px;
@@ -59,12 +75,11 @@
     border-radius: 8px;
   }
 
-  .title {
-    font-size: 28px;
-  }
 
   .subtitle {
-    font-size: 22px;
+    font-family: 'PT bold';
+    font-size: 16px;
+    margin-top: 25px;
   }
 
   .description {
@@ -72,3 +87,4 @@
     max-width: 100%;
   }
 }
+
