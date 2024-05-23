@@ -6,7 +6,7 @@ import sega from '../../../../shared/assets/img/sega.png'
 import close from '../../../../shared/assets/icons/close.png'
 import kvok from '../../../../shared/assets/img/kvokki.png'
 import foto from '../../../../shared/assets/img/foto.jpg'
-import bag from '../../../../shared/assets/img/bag.png'
+import bag from '../../../../shared/assets/img/arendapalatka.png'
 const DynamicArendaComponent = () => {
   const { id } = useParams();
 

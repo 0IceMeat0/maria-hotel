@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Modal from '../modal/modal';
 import styles from './buttonMore.module.css';
 import dom from '../../assets/img/bag.png';
@@ -11,6 +11,10 @@ const ButtonMore = ({ className, obj }) => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [numberFoto, setNumberFoto] = useState(1);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setNumberFoto(1);
+  }, [obj]);
 
   const openModal = () => {
     setModalOpen(true);
@@ -37,7 +41,7 @@ const ButtonMore = ({ className, obj }) => {
   const handleImageLoad = () => {
     setLoading(false); 
   };
-
+  console.log(numberFoto);
   if (!obj) {
     obj = {
       1: dom,
@@ -45,7 +49,7 @@ const ButtonMore = ({ className, obj }) => {
       3: dom3
     };
   }
-
+  
   return (
     <div>
       <button className={className ? styles.button : styles.buttonMore} onClick={openModal}>
