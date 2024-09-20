@@ -1,50 +1,48 @@
-.wrap{
-  display: flex;
-  flex-direction: column;
-justify-content: center;
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  padding: 25px;
-width: 100%;
-margin: auto;
-
+    padding: 25px;
+    width: 100%;
+    margin: auto;
 }
-.header{
-  display: flex;
-  align-items: center;
-  font-size: 18px;
+.header {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
 }
 .transitionContainer {
-  transition: transform 0.5s ease; 
+    transition: transform 0.5s ease;
 }
-.blockButtons{
-  margin-left: auto;
-  display: flex;
+.blockButtons {
+    margin-left: auto;
+    display: flex;
 }
-.button{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #DECFBF;
-  margin-left: 25px;
-  display: flex;
- 
-  justify-content: center;
-  align-items: center;
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #decfbf;
+    margin-left: 25px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
 }
-.strelka{
-  width: 20px;
-  height: 20px;
+.strelka {
+    width: 20px;
+    height: 20px;
 }
 .button:first-child .strelka {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
-@media(min-width: 600px) {
-  .wrap{
-    align-items: center;
-  }
-
-  .blockButtons{
-    margin-left: 400px;
+@media (min-width: 600px) {
+    .wrap {
+        align-items: center;
     }
 
+    .blockButtons {
+        margin-left: 400px;
+    }
 }

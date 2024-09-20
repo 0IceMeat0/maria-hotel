@@ -1,4 +1,21 @@
-.button{
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.loader {
+   position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+.button {
     color: #ffffff;
     width: 100%;
     font-size: 14px;
@@ -10,114 +27,99 @@
     height: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  .title{
+}
+.title {
     margin-bottom: 10px;
-  }
+}
 
-  .img{
+.img {
     width: 50%;
     height: 100%;
-  }
-  .buttonNext{
-  background-color: #EEEEEE;
-  margin-left: 15px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  
-  .buttonNext:first-child{
-    margin-left: 0;
-    margin-right: 15px;
-  transform: rotate(180deg);
-  }
-.modal{
-  width: 0;
 }
-.strelka{
-  width: 20px;
-  height: 20px;
-}
-.buttonMore{
-  padding: 10px;
-  height: 60px;
-  width: 100%;
-  color: #ECE7E4;
-  font-size: 14px;
-  line-height: 1.55;
-  font-weight: 600;
-  border-width: 1px;
-  border-color: #ffffff;
-  border-style: solid;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  margin-bottom: 15px;
-  border-radius: 8px;
-}
-.buttonMore:hover{
-  background-color: #ECE7E4;
-  color: black;
- 
-}
-.disabled {
-  opacity: 0.5; 
-  pointer-events: none;
-}
-.imageContainer {
-  position: relative;
-  width: 50%;
-  height: 50%;
+.buttonNext {
+    background-color: #eeeeee;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 75px;
+.buttonNext:first-child {
+    margin-left: 0;
+    margin-right: 15px;
+    transform: rotate(180deg);
+}
+.modal {
+    width: 0;
+}
+.strelka {
+    width: 20px;
+    height: 20px;
+}
+.buttonMore {
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    color: #ece7e4;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 600;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    transition:
+        background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.buttonMore:hover {
+    background-color: #ece7e4;
+    color: black;
+}
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.imageContainer {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img.hidden {
-  display: none;
+    display: none;
 }
 @media (max-width: 600px) {
-  .img{
-    width: 250px;
-  }
+    .img {
+        width: 250px;
+    }
 }
-
 
 @media (min-width: 600px) and (max-width: 980px) {
-  .img{
-    width: 350px;
-    height: 60%;
-  }
-.buttonMore{
-  width: 250px;
+    .img {
+        width: 350px;
+        height: 60%;
+    }
+    .buttonMore {
+        width: 250px;
+    }
 }
-
+@media (min-width: 981px) {
+    .buttonMore {
+        width: 250px;
+    }
+    .img {
+        width: 600px;
+        height: 100%;
+    }
+    .loader {
+        width: 100px;
+        height: 100px;
+    }
 }
-@media(min-width: 981px) {
-
-.buttonMore{
-  width: 250px;
-}
-.img{
-  width: 600px;
-  height: 100%;
-}
-.loader {
-
-  width: 100px;
-  height: 100px;
-
-}
-
-}
-
-
-
-

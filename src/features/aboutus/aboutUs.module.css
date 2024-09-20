@@ -1,147 +1,137 @@
-.iframe{
- border-radius: 12px;
- border: none;
+.iframe {
+    border-radius: 12px;
+    border: none;
 }
 .wrap {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .titlePage {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-  font-family: 'PT bold';
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'PT bold';
 }
 .titleBlock {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-  font-family: 'PT bold';
-
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'PT bold';
 }
 .buttonContainer {
-  margin-bottom: 20px;
-  display: flex;
-
+    margin-bottom: 20px;
+    display: flex;
 }
 
 .button {
-  padding: 10px 10px;
-  font-size: 14px;
-  gap: 15px;
-  color: #fff;
-  background-color:#BA9A7A;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
+    padding: 10px 10px;
+    font-size: 14px;
+    gap: 15px;
+    color: #fff;
+    background-color: #ba9a7a;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .contactInfo {
-  margin-bottom: 20px;
-  color: #555;
+    margin-bottom: 20px;
+    color: #555;
 }
 
-.phoneNumber{
-  margin-top: 0;
+.phoneNumber {
+    margin-top: 0;
 
-  font-size: 25px;
-  font-family: 'PT bold';
-
+    font-size: 25px;
+    font-family: 'PT bold';
 }
 .socialLinks a {
-  margin-right: 10px;
-  color: #5F5144;
-  text-decoration: none;
-  margin-top: 25px;
+    margin-right: 10px;
+    color: #5f5144;
+    text-decoration: none;
+    margin-top: 25px;
 }
-.socialLinks{
-display: flex;
-align-items: center;
-margin-bottom: 15px;
+.socialLinks {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
-.link{
-  display: flex;
-  align-items: center;
-  }
+.link {
+    display: flex;
+    align-items: center;
+}
 .socialLinks a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-.vk{
-  
-  width: 40px;
-  height: 40px;
+.vk {
+    width: 40px;
+    height: 40px;
 }
-.insta{
-  width: 40px;
-  height: 40px;
- 
+.insta {
+    width: 40px;
+    height: 40px;
 }
-.whatsapp{
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
+.whatsapp {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
-.telegram{
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
+.telegram {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
-.titleIframe{
-  margin-bottom: 25px;
-  font-size: 22px;
-  font-family: 'PT bold';
+.titleIframe {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-family: 'PT bold';
 }
-.button:hover{
-  opacity: 90%;
- }
-@media(min-width: 981px) {
-.wrap{
-display: flex;
-flex-direction: row;
-width: 90%;
-justify-content: center;
-align-items: center;
+.button:hover {
+    opacity: 90%;
 }
-.block{
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+@media (min-width: 981px) {
+    .wrap {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .block {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .titlePage {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .buttonContainer {
+        margin-bottom: 25px;
+        margin-top: 35px;
+        gap: 15px;
+    }
+    .button {
+        margin-right: 0;
+    }
+    .address {
+        padding-top: 10px;
+        margin-bottom: 5px;
+    }
+    .iframe {
+        margin-left: 25px;
+    }
+    .phoneNumber {
+        margin-bottom: 25px;
+    }
+    .titleIframe {
+        display: none;
+    }
 }
-.titlePage{
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-.buttonContainer{
-  margin-bottom: 25px;
-  margin-top: 35px;
-  gap: 15px;
-
-}
-.button{
-  margin-right: 0;
-
-}
-.address{
-  padding-top: 10px;
-  margin-bottom: 5px;
-}
-.iframe{
-  margin-left: 25px;
-}
-.phoneNumber{
-  margin-bottom: 25px;
-
-}
-.titleIframe{
-  display: none;
-}
-}
-
-
