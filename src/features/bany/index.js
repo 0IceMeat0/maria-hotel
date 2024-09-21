@@ -3,6 +3,7 @@ import bany1 from '../../shared/assets/img/bany2.png';
 import bany2 from '../../shared/assets/img/bany3.png';
 import ButtonMore from '../../shared/ui/buttonMore/buttonMore';
 import styles from './bany.module.css';
+import React from 'react';
 const Bany = () => {
     const obj = {
         1: bany,

@@ -4,7 +4,7 @@ import fire from '../../shared/assets/icons/fire.png';
 import house from '../../shared/assets/icons/house.png';
 import inet from '../../shared/assets/icons/inet.png';
 import styles from './dopinfo.module.css';
-
+import React from 'react';
 const DopInfo = () => {
     return (
         <div className={styles.wrap}>

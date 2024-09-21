@@ -1,6 +1,7 @@
 import uslovia from '../../shared/assets/img/uslovia.png';
 import Detalis from '../../shared/ui/details';
 import styles from './reglament.module.css';
+import React from 'react';
 const Reglament = () => {
     return (
         <div className={styles.wrap} id="ysloviya">

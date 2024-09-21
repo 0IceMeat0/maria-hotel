@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import loader from '../../shared/assets/icons/loaderWhite.gif';
 import fotoRoom1 from '../../shared/assets/img/hotelRoom/1.jpg';

@@ -1,5 +1,5 @@
 import styles from './discount.module.css';
-
+import React from 'react';
 export const Discount = () => {
     return (
         <div className={styles.wrap}>

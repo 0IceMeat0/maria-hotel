@@ -3,6 +3,7 @@ import mount from '../../shared/assets/icons/mount.svg';
 import tree from '../../shared/assets/icons/tree.svg';
 import wood from '../../shared/assets/icons/wood.svg';
 import styles from './header.module.css';
+import React from 'react';
 const Header = () => {
     return (
         <div className={styles.block}>

@@ -1,4 +1,5 @@
 import lady from '../../../../shared/assets/img/zlo.jpg';
+import React from 'react';
 import styles from './rating.module.css';
 export const Rating = () => {
     return (

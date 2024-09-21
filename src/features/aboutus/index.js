@@ -3,7 +3,7 @@ import telegram from '../../shared/assets/icons/telegram.svg';
 import vk from '../../shared/assets/icons/vk.svg';
 import whatsapp from '../../shared/assets/icons/whatsapp.svg';
 import styles from './aboutUs.module.css';
-
+import React from 'react';
 const AboutUs = () => {
     return (
         <div id="contacts" className={styles.wrap}>

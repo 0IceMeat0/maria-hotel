@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import strelka from '../../shared/assets/icons/strelka.png';
 import PlacesInfo from '../placesInfo';
