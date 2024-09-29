@@ -1,13 +1,8 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-
-import close from '../../../../shared/assets/icons/close.png';
-import bag from '../../../../shared/assets/img/arendapalatka.png';
-import foto from '../../../../shared/assets/img/foto.jpg';
-import kvok from '../../../../shared/assets/img/kvokki.png';
-import sega from '../../../../shared/assets/img/sega.png';
-import sony from '../../../../shared/assets/img/sony.png';
+import { close, bag, foto, kvok, sega, sony } from '@/shared/assets';
 import styles from './dunamicPage.module.css';
+
 const DynamicArendaComponent = () => {
     const { id } = useParams();
 

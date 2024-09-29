@@ -1,6 +1,7 @@
-import lady from '../../../../shared/assets/img/zlo.jpg';
+import { lady } from '@/shared/assets';
 import React from 'react';
 import styles from './rating.module.css';
+
 export const Rating = () => {
     return (
         <div className={styles.wrap}>

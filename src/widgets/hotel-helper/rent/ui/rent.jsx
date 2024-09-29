@@ -1,9 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import arenda2 from '../../../../shared/assets/img/arenda2.png';
-import CartoonForest from '../../../../shared/assets/img/CartoonForest.png';
-import turism from '../../../../shared/assets/img/turism.png';
-import zoo from '../../../../shared/assets/img/zoo.jpeg';
+import { arenda2, CartoonForest, turism, zoo } from '@/shared/assets';
 import styles from './rent.module.css';
 
 export const Rent = () => {

@@ -2,19 +2,19 @@ import '../../shared/normalize/normalize.css';
 
 import React, { useState } from 'react';
 
-import AboutUs from '../../features/aboutus';
-import Bany from '../../features/bany';
-import DopInfo from '../../features/dopinfo';
-import Footer from '../../features/footer';
-import Header from '../../features/header';
-import Places from '../../features/places';
-import Reglament from '../../features/reglament';
-import insta from '../../shared/assets/icons/instagramewhite.png';
-import menu from '../../shared/assets/icons/menu.png';
-import telegramwhite from '../../shared/assets/icons/telegramwhite.png';
-import vk from '../../shared/assets/icons/vkwhite.png';
-import whatsappwhite from '../../shared/assets/icons/whatsappwhite.png';
-import Modal from '../../shared/ui/modal/modal';
+import { AboutUs } from '@/widgets/hotel/about-us';
+import { Bany } from '@/widgets/hotel/bany';
+import { DopInfo } from '@/widgets/hotel/dop-info';
+import { Footer } from '@/widgets/hotel/footer';
+import { Header } from '@/widgets/hotel/header';
+import { Places } from '@/widgets/hotel/places';
+import { Reglament } from '@/widgets/hotel/reglament';
+import insta from '@/shared/assets/icons/instagramewhite.png';
+import menu from '@/shared/assets/icons/menu.png';
+import telegramwhite from '@/shared/assets/icons/telegramwhite.png';
+import vk from '@/shared/assets/icons/vkwhite.png';
+import whatsappwhite from '@/shared/assets/icons/whatsappwhite.png';
+import Modal from '@/shared/ui/modal/modal';
 import styles from './hotel.module.css';
 
 function Hotel() {

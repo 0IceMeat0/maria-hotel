@@ -4,12 +4,12 @@ import { createBrowserRouter } from 'react-router-dom';
 import ErrorBoundary from '../ui/error-boundary';
 import LoadingSkeleton from '../ui/skeleton/loading-skeleton';
 
-const Hotel = React.lazy(() => import('../../pages/hotel/hotel'));
+const Hotel = React.lazy(() => import('@/pages/hotel/hotel'));
 const HotelHelper = React.lazy(
-    () => import('../../pages/hotel-helper/hotel-helper'),
+    () => import('@/pages/hotel-helper/hotel-helper'),
 );
 const DinamicArendaComponent = React.lazy(
-    () => import('../../widgets/hotel-helper/rent/ui/dynamic-rent'),
+    () => import('@/widgets/hotel-helper/rent/ui/dynamic-rent'),
 );
 
 const ErrorBoundaryLayout = ({ children, fallback }) => {

@@ -7,6 +7,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended',
         'react-app',
         'react-app/jest',
         'prettier',
@@ -36,5 +37,6 @@ module.exports = {
         'simple-import-sort/exports': 'error',
         'react/react-in-jsx-scope': 'off',
         'react/prop-types': 'off',
+        'import/newline-after-import': ['error', { count: 1 }],
     },
 };
