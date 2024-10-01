@@ -1,13 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
 
-import strelka from '../../assets/icons/strelka.png';
-import dom from '../../assets/img/bag.png';
-import dom2 from '../../assets/img/house.png';
-import dom3 from '../../assets/img/room.png';
+import { strelka, dom, dom2, dom3 } from '../../assets/';
+
 import Modal from '../modal/modal';
 import styles from './buttonMore.module.css';
 
-// eslint-disable-next-line react/prop-types
 const ButtonMore = ({ className, obj }) => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [currentFoto, setCurrentFoto] = useState(1);

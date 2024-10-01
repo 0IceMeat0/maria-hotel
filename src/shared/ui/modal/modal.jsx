@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import closewhite from '../../../shared/assets/icons/closewhite.png';
-import close from '../../assets/icons/close.png';
+import { closewhite, close } from '../../assets';
 import styles from './modal.module.css';
 
 const Modal = ({ onClose, children, menu, className }) => {

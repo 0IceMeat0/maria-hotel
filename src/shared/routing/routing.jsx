@@ -1,30 +1,45 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import Hotel from '@/pages/hotel/hotel';
-import HotelHelper from '@/pages/hotel-helper/hotel-helper';
-import DinamicArendaComponent from '@/widgets/hotel-helper/rent/ui/dynamic-rent';
+import { ErrorBoundaryLayout } from '../error-boundary';
+import { MainPageSkeleton } from '../ui/skeleton/ui/hotelpage';
+
+const Hotel = React.lazy(() => import('@/pages/hotel/hotel'));
+const HotelHelper = React.lazy(
+    () => import('@/pages/hotel-helper/hotel-helper'),
+);
+const DinamicArendaComponent = React.lazy(
+    () => import('@/widgets/hotel-helper/rent/ui/dynamic-rent'),
+);
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <Hotel />,
+        element: (
+            <ErrorBoundaryLayout fallback={<MainPageSkeleton />}>
+                <Hotel />
+            </ErrorBoundaryLayout>
+        ),
     },
     {
         path: 'qrcode',
         children: [
             {
                 index: true,
-                element: <HotelHelper />,
+                element: (
+                    <ErrorBoundaryLayout fallback={<MainPageSkeleton />}>
+                        <HotelHelper />
+                    </ErrorBoundaryLayout>
+                ),
             },
             {
                 path: ':id',
-                element: <DinamicArendaComponent />,
+                element: (
+                    <ErrorBoundaryLayout fallback={<MainPageSkeleton />}>
+                        <DinamicArendaComponent />
+                    </ErrorBoundaryLayout>
+                ),
             },
         ],
-    },
-    {
-        path: '*',
-        element: <div>404</div>,
     },
 ]);

@@ -25,6 +25,9 @@ import arenda2 from './img/arenda2.png';
 import CartoonForest from './img/CartoonForest.png';
 import turism from './img/turism.png';
 import zoo from './img/zoo.jpeg';
+import dom from './img/bag.png';
+import dom2 from './img/house.png';
+import dom3 from './img/room.png';
 
 export {
     bany,
@@ -53,8 +56,11 @@ export {
     CartoonForest,
     turism,
     zoo,
+    dom,
+    dom2,
+    dom3,
 };
-
+import closewhite from './icons/closewhite.png';
 import close from './icons/close.png';
 import insta from './icons/instagram.svg';
 import telegram from './icons/telegram.svg';
@@ -89,4 +95,5 @@ export {
     strelka,
     loader,
     close,
+    closewhite,
 };
