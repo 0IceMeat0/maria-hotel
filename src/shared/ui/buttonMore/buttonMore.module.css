@@ -53,12 +53,13 @@
     transform: rotate(180deg);
 }
 .modal {
-   
+
 }
 .wrap{
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: space-around;
+    align-items: center;
 }
 .strelka {
     width: 20px;

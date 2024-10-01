@@ -87,7 +87,7 @@
 @media (min-width: 981px) {
     .closeButtonFoto {
         padding: 10px;
-        position: relative;
+        position: absolute;
         left: 50px;
         top: -350px;
     }

@@ -66,7 +66,13 @@ const ButtonMore = ({ className, obj }) => {
                             />
                         </button>
                         <div className={styles.imageContainer}>
-                            {!loading && <div className={styles.loader}></div>}
+                            {loading && <div className={styles.loader}></div>}
+                            <img
+                                className={`${styles.img} ${loading ? styles.hidden : ''}`}
+                                src={obj[currentFoto]}
+                                alt="Фото"
+                                onLoad={handleImageLoad}
+                            />
                         </div>
                         <button
                             className={`${styles.buttonNext} ${currentFoto === Object.keys(obj).length ? styles.disabled : ''}`}
