@@ -53,37 +53,33 @@ const ButtonMore = ({ className, obj }) => {
             </button>
             {isModalOpen && (
                 <Modal onClose={closeModal} className={styles.modal}>
-                    <button
-                        className={`${styles.buttonNext} ${currentFoto === 1 ? styles.disabled : ''}`}
-                        onClick={handleNumberMinus}
-                        disabled={currentFoto === 1}
-                    >
-                        <img
-                            src={strelka}
-                            className={styles.strelka}
-                            alt="prev"
-                        />
-                    </button>
-                    <div className={styles.imageContainer}>
-                        {loading && <div className={styles.loader}></div>}
-                        <img
-                            className={`${styles.img} ${loading ? styles.hidden : ''}`}
-                            src={obj[currentFoto]}
-                            alt="Фото"
-                            onLoad={handleImageLoad}
-                        />
+                    <div className={styles.wrap}>
+                        <button
+                            className={`${styles.buttonNext} ${currentFoto === 1 ? styles.disabled : ''}`}
+                            onClick={handleNumberMinus}
+                            disabled={currentFoto === 1}
+                        >
+                            <img
+                                src={strelka}
+                                className={styles.strelka}
+                                alt="prev"
+                            />
+                        </button>
+                        <div className={styles.imageContainer}>
+                            {!loading && <div className={styles.loader}></div>}
+                        </div>
+                        <button
+                            className={`${styles.buttonNext} ${currentFoto === Object.keys(obj).length ? styles.disabled : ''}`}
+                            onClick={handleNumberPlus}
+                            disabled={currentFoto === Object.keys(obj).length}
+                        >
+                            <img
+                                src={strelka}
+                                className={styles.strelka}
+                                alt="next"
+                            />
+                        </button>
                     </div>
-                    <button
-                        className={`${styles.buttonNext} ${currentFoto === Object.keys(obj).length ? styles.disabled : ''}`}
-                        onClick={handleNumberPlus}
-                        disabled={currentFoto === Object.keys(obj).length}
-                    >
-                        <img
-                            src={strelka}
-                            className={styles.strelka}
-                            alt="next"
-                        />
-                    </button>
                 </Modal>
             )}
         </div>
