@@ -6,25 +6,43 @@ import styles from './buttonMore.module.css';
 const ButtonMore = ({ className, obj = { 1: dom, 2: dom2, 3: dom3 } }) => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [currentFoto, setCurrentFoto] = useState(1);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         setCurrentFoto(1);
+        setLoading(true);
     }, [obj]);
 
-    const openModal = useCallback(() => setModalOpen(true), []);
+    const openModal = useCallback(() => {
+        setModalOpen(true);
+        setLoading(true);
+    }, []);
+
     const closeModal = useCallback(() => setModalOpen(false), []);
 
     const handleNumberMinus = useCallback(() => {
-        setCurrentFoto(prevFoto => Math.max(1, prevFoto - 1));
+        setCurrentFoto(prevFoto => {
+            const newFoto = Math.max(1, prevFoto - 1);
+            if (newFoto !== prevFoto) {
+                setLoading(true);
+            }
+            return newFoto;
+        });
     }, []);
 
     const handleNumberPlus = useCallback(() => {
-        setCurrentFoto(prevFoto =>
-            Math.min(Object.keys(obj).length, prevFoto + 1),
-        );
+        setCurrentFoto(prevFoto => {
+            const newFoto = Math.min(Object.keys(obj).length, prevFoto + 1);
+            if (newFoto !== prevFoto) {
+                setLoading(true);
+            }
+            return newFoto;
+        });
     }, [obj]);
 
-    const handleImageLoad = useCallback(() => {}, []);
+    const handleImageLoad = useCallback(() => {
+        setLoading(false);
+    }, []);
 
     return (
         <div>
@@ -49,8 +67,9 @@ const ButtonMore = ({ className, obj = { 1: dom, 2: dom2, 3: dom3 } }) => {
                             />
                         </button>
                         <div className={styles.imageContainer}>
+                            {loading && <div className={styles.loader}></div>}
                             <img
-                                className={`${styles.img}`}
+                                className={`${styles.img} ${loading ? styles.hidden : ''}`}
                                 src={obj[currentFoto]}
                                 alt="Фото"
                                 onLoad={handleImageLoad}

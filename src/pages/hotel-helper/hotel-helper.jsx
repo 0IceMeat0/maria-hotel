@@ -12,7 +12,7 @@ const HotelHelper = () => {
             <Header />
             <Wifi />
             <Rating />
-            <Rent />
+            {/* <Rent /> */}
             <Chat />
             <Discount />
         </div>

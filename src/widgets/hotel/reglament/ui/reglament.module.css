@@ -27,22 +27,13 @@
     .wrap {
         flex-direction: row;
         height: 300px;
-    }
-    .title {
-        font-weight: 700;
-        padding: 15px;
-        padding-left: 0;
-        font-size: 25px;
-    }
-    .wrap {
-        display: flex;
         align-items: center;
         justify-content: center;
     }
+    
 }
 @media (min-width: 981px) {
     .wrap {
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-direction: row;

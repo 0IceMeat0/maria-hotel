@@ -1,6 +1,6 @@
 .block {
     position: relative;
-    background-image: url('../../../../shared/assets/img/forest.png');
+    background-image: url('@/shared/assets/img/forest.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

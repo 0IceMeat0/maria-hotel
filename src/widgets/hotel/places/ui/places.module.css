@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding: 25px;
     width: 100%;
     margin: auto;
@@ -28,7 +27,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .strelka {
     width: 20px;
