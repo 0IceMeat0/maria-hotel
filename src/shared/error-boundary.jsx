@@ -1,4 +1,4 @@
-import React, { Suspense, Component } from 'react';
+import { Suspense, Component } from 'react';
 class ErrorBoundary extends Component {
     constructor(props) {
         super(props);

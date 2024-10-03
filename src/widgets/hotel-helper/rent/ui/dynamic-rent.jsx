@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { close, bag, foto, kvok, sega, sony } from '@/shared/assets';
 import styles from './dunamicPage.module.css';

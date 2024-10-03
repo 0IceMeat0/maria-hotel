@@ -1,14 +1,15 @@
 import { insta, telegram, vk, whatsapp } from '@/shared/assets';
 
 import styles from './about-us.module.css';
-import React from 'react';
 
 export const AboutUs = () => {
     return (
         <div id="contacts" className={styles.wrap}>
             <div className={styles.block}>
                 <div>
-                    <div className={styles.titlePage}>Жизнь в Maria Hotel</div>
+                    <div className={styles.titlePage}>
+                        Жизнь в Lesnoy Pereulok
+                    </div>
 
                     <div className={styles.buttonContainer}>
                         <button className={styles.button}>

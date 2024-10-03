@@ -1,7 +1,6 @@
 import { bany, bany1, bany2 } from '@/shared/assets';
 import ButtonMore from '@/shared/ui/buttonMore/buttonMore';
 import styles from './bany.module.css';
-import React from 'react';
 
 export const Bany = () => {
     const obj = {

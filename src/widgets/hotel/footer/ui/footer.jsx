@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import React from 'react';
 import styles from './footer.module.css';
 
 export const Footer = () => {
@@ -9,7 +8,7 @@ export const Footer = () => {
 
     return (
         <div className={styles.footer}>
-            <div className={styles.title}>Maria Hotel</div>
+            <div className={styles.title}>Lesnoy Pereulok</div>
             <div className={styles.footerBlock}>
                 <ul className={styles.navList}>
                     <li className={styles.item}>
@@ -34,9 +33,9 @@ export const Footer = () => {
                         Забронировать
                     </Link>
                     <div className={styles.footerinfo}>
-                        2023 - 2024 © Корпорация Maria Hotel. Все права
+                        2023 - 2024 © Корпорация Lesnoy Pereulok. Все права
                         защищены. Конфиденциальная информация, являющаяся
-                        собственностью корпорации Maria Hotel
+                        собственностью корпорации Lesnoy Pereulok
                     </div>
                 </div>
             </div>

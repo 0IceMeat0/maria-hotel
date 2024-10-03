@@ -1,5 +1,4 @@
 import { lady } from '@/shared/assets';
-import React from 'react';
 import styles from './rating.module.css';
 
 export const Rating = () => {

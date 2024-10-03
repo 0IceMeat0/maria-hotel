@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ButtonMore from '@/shared/ui/buttonMore/buttonMore';
 import styles from './places-info.module.css';
 import { Skeleton } from '@/shared/ui/skeleton/skeleton';

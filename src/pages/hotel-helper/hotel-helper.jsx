@@ -5,7 +5,7 @@ import { Header } from '@/widgets/hotel-helper/header';
 import { Rating } from '@/widgets/hotel-helper/rating';
 import { Rent } from '@/widgets/hotel-helper/rent/ui/rent';
 import styles from './hotel-helper.module.css';
-import React from 'react';
+
 const HotelHelper = () => {
     return (
         <div className={styles.wrap}>

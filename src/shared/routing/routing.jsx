@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
 import { ErrorBoundaryLayout } from '../error-boundary';
-import { MainPageSkeleton } from '../ui/skeleton/ui/hotelpage';
+import { HotelSkeleton } from '../ui/skeleton/ui/skeleton-hotel';
 
 const Hotel = React.lazy(() => import('@/pages/hotel/hotel'));
 const HotelHelper = React.lazy(
@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: (
-            <ErrorBoundaryLayout fallback={<MainPageSkeleton />}>
+            <ErrorBoundaryLayout fallback={<HotelSkeleton />}>
                 <Hotel />
             </ErrorBoundaryLayout>
         ),
@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 element: (
-                    <ErrorBoundaryLayout fallback={<MainPageSkeleton />}>
+                    <ErrorBoundaryLayout fallback={<HotelSkeleton />}>
                         <HotelHelper />
                     </ErrorBoundaryLayout>
                 ),
@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
             {
                 path: ':id',
                 element: (
-                    <ErrorBoundaryLayout fallback={<MainPageSkeleton />}>
+                    <ErrorBoundaryLayout fallback={<HotelSkeleton />}>
                         <DinamicArendaComponent />
                     </ErrorBoundaryLayout>
                 ),

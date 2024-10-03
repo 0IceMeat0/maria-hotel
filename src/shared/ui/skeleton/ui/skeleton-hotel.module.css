@@ -1,0 +1,56 @@
+.wrap{
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    padding-bottom: 25px;
+}
+.title {
+    margin: auto;
+    margin-top: 90px;
+    color: #ccc;
+}
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.bottomMenu {
+    display: flex;
+    margin: 25px;
+    gap: 25px;
+    justify-content: flex-end;
+ 
+}
+
+.wrap::before {
+    content: ''; 
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    height: 2px; 
+    background-color: #ccc; 
+}
+
+.skeletonButton1{
+    width: 450px;
+    height: 50px;
+    }
+    .skeletonButton2{
+        width: 650px;
+        height: 15%; 
+    }
+@media (min-width: 981px) {
+    .bottomMenu {
+        width: 650px;
+        justify-content: flex-end;
+        margin: auto;
+        margin-top: 25px;
+    }
+    
+
+}

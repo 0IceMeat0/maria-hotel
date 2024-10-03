@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import React from 'react';
 import { arenda2, CartoonForest, turism, zoo } from '@/shared/assets';
 import styles from './rent.module.css';
 

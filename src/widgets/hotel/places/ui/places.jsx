@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { strelka } from '@/shared/assets';
 import { PlacesInfo } from './places-info/places-info';

@@ -1,7 +1,7 @@
 import telephone from '@/shared/assets/icons/telephone.svg';
 import whatsapp from '@/shared/assets/icons/whatsapp.svg';
 import styles from './footer.module.css';
-import React from 'react';
+
 export const Chat = () => {
     return (
         <div className={styles.wrap}>

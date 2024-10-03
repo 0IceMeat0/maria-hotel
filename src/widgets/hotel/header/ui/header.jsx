@@ -1,7 +1,6 @@
 import { bear, mount, tree, wood } from '@/shared/assets';
 
 import styles from './header.module.css';
-import React from 'react';
 
 export const Header = () => {
     return (
@@ -23,7 +22,7 @@ export const Header = () => {
                     Адрес и контакты
                 </a>
             </div>
-            <h1 className={styles.title}>Maria Hotel</h1>
+            <h1 className={styles.title}>Lesnoy Pereulok</h1>
             <div className={styles.wrap}>
                 <button className={styles.button}>Забронировать</button>
                 <ul className={styles.list}>

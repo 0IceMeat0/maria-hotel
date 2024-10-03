@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import Modal from '../modal/modal';
 import styles from './detalis.module.css';

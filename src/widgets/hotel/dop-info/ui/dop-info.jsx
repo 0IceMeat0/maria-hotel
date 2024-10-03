@@ -1,7 +1,5 @@
 import { car, eat, fire, house, inet } from '@/shared/assets';
-
 import styles from './dop-info.module.css';
-import React from 'react';
 
 export const DopInfo = () => {
     return (

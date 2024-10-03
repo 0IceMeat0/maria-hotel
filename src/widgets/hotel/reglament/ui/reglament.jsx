@@ -1,7 +1,6 @@
 import { uslovia } from '@/shared/assets';
 import Detalis from '@/shared/ui/details';
 import styles from './reglament.module.css';
-import React from 'react';
 
 export const Reglament = () => {
     return (
@@ -16,7 +15,7 @@ export const Reglament = () => {
                 <div className={styles.info}>
                     <div>Ознакомьтесь с правилами заселения</div>
                     <div>и условиями предоставления услуг</div>
-                    <div>на территории Maria Hotel</div>
+                    <div>на территории Lesnoy Pereulok</div>
                 </div>
                 <Detalis />
             </div>

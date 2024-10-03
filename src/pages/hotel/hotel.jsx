@@ -1,6 +1,6 @@
 import '../../shared/normalize/normalize.css';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { AboutUs } from '@/widgets/hotel/about-us';
 import { Bany } from '@/widgets/hotel/bany';
