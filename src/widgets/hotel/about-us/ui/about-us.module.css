@@ -8,14 +8,7 @@
     padding: 20px;
     border-radius: 8px;
 }
-
-.titlePage {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-    font-family: 'PT bold';
-}
+.titlePage,
 .titleBlock {
     font-size: 24px;
     font-weight: bold;
@@ -44,10 +37,8 @@
     margin-bottom: 20px;
     color: #555;
 }
-
 .phoneNumber {
     margin-top: 0;
-
     font-size: 25px;
     font-family: 'PT bold';
 }
@@ -69,19 +60,14 @@
 .socialLinks a:hover {
     text-decoration: underline;
 }
-.vk {
-    width: 40px;
-    height: 40px;
-}
+
+.vk,
 .insta {
     width: 40px;
     height: 40px;
 }
-.whatsapp {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-}
+
+.whatsapp,
 .telegram {
     width: 30px;
     height: 30px;
@@ -125,9 +111,7 @@
         padding-top: 10px;
         margin-bottom: 5px;
     }
-    .iframe {
-        margin-left: 25px;
-    }
+    .iframe,
     .phoneNumber {
         margin-bottom: 25px;
     }

@@ -13,7 +13,7 @@ export const AboutUs = () => {
 
                     <div className={styles.buttonContainer}>
                         <button className={styles.button}>
-                            <img src={vk} className={styles.vk} alt="vk" />{' '}
+                            <img src={vk} className={styles.vk} alt="vk" />
                             Подписаться
                         </button>
                         <button className={styles.button}>
@@ -21,7 +21,7 @@ export const AboutUs = () => {
                                 src={insta}
                                 className={styles.insta}
                                 alt="insta"
-                            />{' '}
+                            />
                             Подписаться
                         </button>
                     </div>
@@ -40,16 +40,16 @@ export const AboutUs = () => {
                             <img
                                 src={telegram}
                                 className={styles.telegram}
-                                alt="telegram"
-                            />{' '}
+                                alt="Логотип Telegram"
+                            />
                             <div className={styles.linkText}>Telegram</div>
                         </a>
                         <a href="#1" className={styles.link}>
                             <img
                                 src={whatsapp}
                                 className={styles.whatsapp}
-                                alt="whatsapp"
-                            />{' '}
+                                alt="Логотип WhatsApp"
+                            />
                             <div className={styles.linkText}>WhatsApp</div>
                         </a>
                     </div>

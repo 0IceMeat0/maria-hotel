@@ -2,73 +2,68 @@ import '../../shared/normalize/normalize.css';
 
 import { useState } from 'react';
 
-import { AboutUs } from '@/widgets/hotel/about-us';
-import { Bany } from '@/widgets/hotel/bany';
-import { DopInfo } from '@/widgets/hotel/dop-info';
-import { Footer } from '@/widgets/hotel/footer';
-import { Header } from '@/widgets/hotel/header';
-import { Places } from '@/widgets/hotel/places';
-import { Reglament } from '@/widgets/hotel/reglament';
-import insta from '@/shared/assets/icons/instagramewhite.png';
-import menu from '@/shared/assets/icons/menu.png';
-import telegramwhite from '@/shared/assets/icons/telegramwhite.png';
-import vk from '@/shared/assets/icons/vkwhite.png';
-import whatsappwhite from '@/shared/assets/icons/whatsappwhite.png';
+import {
+    AboutUs,
+    Bany,
+    DopInfo,
+    Footer,
+    Header,
+    Places,
+    Reglament,
+} from '@/widgets/hotel';
+import { insta, menu, telegramwhite, vk, whatsappwhite } from '@/shared/assets';
 import Modal from '@/shared/ui/modal/modal';
 import styles from './hotel.module.css';
 
 function Hotel() {
     const [isModalOpenMenu, setModalOpenMenu] = useState(false);
 
-    const openModal = () => {
-        setModalOpenMenu(true);
-    };
-
-    const closeModal = () => {
-        setModalOpenMenu(false);
+    const toggleModal = () => {
+        setModalOpenMenu(!isModalOpenMenu);
     };
     return (
         <div className={styles.wrap}>
             <button
                 className={`${styles.button} ${isModalOpenMenu ? styles.hidden : ''}`}
-                onClick={openModal}
+                onClick={toggleModal}
+                aria-label="Открыть меню"
             >
-                <img src={menu} className={styles.img} alt="" />
+                <img src={menu} className={styles.img} alt="menu" />
                 {isModalOpenMenu && (
-                    <Modal onClose={closeModal} menu={true}>
+                    <Modal onClose={toggleModal} menu={true}>
                         <div className={styles.modalBlock}>
                             <a
                                 className={styles.modalButton}
                                 href="#places"
-                                onClick={closeModal}
+                                onClick={toggleModal}
                             >
                                 Номера
                             </a>
                             <a
                                 className={styles.modalButton}
                                 href="#bany"
-                                onClick={closeModal}
+                                onClick={toggleModal}
                             >
                                 Баня
                             </a>
                             <a
                                 className={styles.modalButton}
                                 href="#places"
-                                onClick={closeModal}
+                                onClick={toggleModal}
                             >
                                 Территория
                             </a>
                             <a
                                 className={styles.modalButton}
                                 href="#ysloviya"
-                                onClick={closeModal}
+                                onClick={toggleModal}
                             >
                                 Условия размещения
                             </a>
                             <a
                                 className={styles.modalButton}
                                 href="#contacts"
-                                onClick={closeModal}
+                                onClick={toggleModal}
                             >
                                 Адрес и контакты
                             </a>
@@ -78,17 +73,17 @@ function Hotel() {
                             <img
                                 src={insta}
                                 className={styles.imgicons}
-                                alt=""
+                                alt="instagram"
                             />
                             <img
                                 src={whatsappwhite}
                                 className={styles.imgicons}
-                                alt=""
+                                alt="whatsapp"
                             />
                             <img
                                 src={telegramwhite}
                                 className={styles.imgicons}
-                                alt=""
+                                alt="telegram"
                             />
                         </div>
                     </Modal>

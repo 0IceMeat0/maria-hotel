@@ -11,7 +11,7 @@ export const Rating = () => {
                 только приятные воспоминания от Вашего пребывания
             </div>
             <div className={styles.blockButton}>
-                <button className={styles.button}>Я в восторге</button>{' '}
+                <button className={styles.button}>Я в восторге</button>
                 <button className={styles.button}>Есть проблемы</button>
             </div>
         </div>

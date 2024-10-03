@@ -7,7 +7,7 @@
         0,
         0,
         0.2
-    ); /* Используем rgba для установки прозрачности цвета фона */
+    ); 
     font-size: 30px;
     display: flex;
     flex-direction: column;

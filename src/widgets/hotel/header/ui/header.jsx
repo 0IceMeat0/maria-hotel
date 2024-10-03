@@ -29,7 +29,6 @@ export const Header = () => {
                     <li className={styles.item}>
                         <img src={bear} className={styles.icon} alt="icon" />
                         <div className={styles.iconBlock}>
-                            {' '}
                             Удобное расположение
                         </div>
                     </li>

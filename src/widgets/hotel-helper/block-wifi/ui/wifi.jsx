@@ -23,7 +23,11 @@ export const Wifi = () => {
             <div className={styles.text}>
                 Пароль: <span className={styles.bold}>{password}</span>
             </div>
-            <button className={styles.button} onClick={copyToClipboard}>
+            <button
+                className={styles.button}
+                onClick={copyToClipboard}
+                aria-label="Копировать"
+            >
                 {world}
             </button>
             <button

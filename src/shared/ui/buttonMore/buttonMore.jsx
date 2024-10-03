@@ -1,14 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
-
-import { strelka, dom, dom2, dom3 } from '../../assets/';
-
+import { strelkaBlack, dom, dom2, dom3 } from '../../assets/';
 import Modal from '../modal/modal';
 import styles from './buttonMore.module.css';
 
-const ButtonMore = ({ className, obj }) => {
+const ButtonMore = ({ className, obj = { 1: dom, 2: dom2, 3: dom3 } }) => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [currentFoto, setCurrentFoto] = useState(1);
-    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         setCurrentFoto(1);
@@ -18,35 +15,21 @@ const ButtonMore = ({ className, obj }) => {
     const closeModal = useCallback(() => setModalOpen(false), []);
 
     const handleNumberMinus = useCallback(() => {
-        if (currentFoto > 1) {
-            setCurrentFoto(prevFoto => prevFoto - 1);
-            setLoading(true);
-        }
-    }, [currentFoto]);
-
-    const handleNumberPlus = useCallback(() => {
-        if (currentFoto < Object.keys(obj).length) {
-            setCurrentFoto(prevFoto => prevFoto + 1);
-            setLoading(true);
-        }
-    }, [currentFoto, obj]);
-
-    const handleImageLoad = useCallback(() => {
-        setLoading(false);
+        setCurrentFoto(prevFoto => Math.max(1, prevFoto - 1));
     }, []);
 
-    if (!obj) {
-        obj = {
-            1: dom,
-            2: dom2,
-            3: dom3,
-        };
-    }
+    const handleNumberPlus = useCallback(() => {
+        setCurrentFoto(prevFoto =>
+            Math.min(Object.keys(obj).length, prevFoto + 1),
+        );
+    }, [obj]);
+
+    const handleImageLoad = useCallback(() => {}, []);
 
     return (
         <div>
             <button
-                className={className ? styles.button : styles.buttonMore}
+                className={className || styles.buttonMore}
                 onClick={openModal}
             >
                 Смотреть фото
@@ -60,15 +43,14 @@ const ButtonMore = ({ className, obj }) => {
                             disabled={currentFoto === 1}
                         >
                             <img
-                                src={strelka}
+                                src={strelkaBlack}
                                 className={styles.strelka}
                                 alt="prev"
                             />
                         </button>
                         <div className={styles.imageContainer}>
-                            {loading && <div className={styles.loader}></div>}
                             <img
-                                className={`${styles.img} ${loading ? styles.hidden : ''}`}
+                                className={`${styles.img}`}
                                 src={obj[currentFoto]}
                                 alt="Фото"
                                 onLoad={handleImageLoad}
@@ -80,7 +62,7 @@ const ButtonMore = ({ className, obj }) => {
                             disabled={currentFoto === Object.keys(obj).length}
                         >
                             <img
-                                src={strelka}
+                                src={strelkaBlack}
                                 className={styles.strelka}
                                 alt="next"
                             />

@@ -76,8 +76,10 @@ import mount from './icons/mount.svg';
 import tree from './icons/tree.svg';
 import wood from './icons/wood.svg';
 import strelka from './icons/strelka.png';
-import loader from './icons/loaderWhite.gif';
-
+import strelkaBlack from './icons/strelkaBlack.png';
+import menu from './icons/menu.png';
+import telegramwhite from './icons/telegramwhite.png';
+import whatsappwhite from './icons/whatsappwhite.png';
 export {
     insta,
     telegram,
@@ -93,7 +95,10 @@ export {
     tree,
     wood,
     strelka,
-    loader,
     close,
     closewhite,
+    menu,
+    telegramwhite,
+    whatsappwhite,
+    strelkaBlack,
 };

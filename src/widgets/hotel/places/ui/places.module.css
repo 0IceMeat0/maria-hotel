@@ -23,12 +23,12 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #decfbf;
+    background-color: #ba9a7a;
     margin-left: 25px;
     display: flex;
-
     justify-content: center;
     align-items: center;
+
 }
 .strelka {
     width: 20px;

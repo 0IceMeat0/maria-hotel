@@ -26,6 +26,7 @@ export const Places = () => {
                             e.preventDefault();
                             onClickPage('sub');
                         }}
+                        aria-label="Предыдущий вариант"
                     >
                         <img src={strelka} className={styles.strelka} alt="" />
                     </button>
@@ -35,6 +36,7 @@ export const Places = () => {
                             e.preventDefault();
                             onClickPage('sup');
                         }}
+                        aria-label="Следующий вариант"
                     >
                         <img src={strelka} className={styles.strelka} alt="" />
                     </button>
