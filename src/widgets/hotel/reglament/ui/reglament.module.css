@@ -2,47 +2,29 @@
     display: flex;
     flex-direction: column;
     padding: 25px;
-    background-color: #222222;
+    background-image: url('@/shared/assets/img/room3.png');
+    background-position: center;
     color: #ece7e4;
+    height: 100lvh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
-.title {
-    font-weight: 700;
-    padding: 15px;
-    padding-left: 0;
-    font-size: 25px;
+.wrap:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
 }
-.info {
-    margin-bottom: 25px;
+.link{
+    cursor: pointer;
+    padding: 25px;
 }
-.bag {
-    display: none;
-}
-@media (min-width: 600px) and (max-width: 980px) {
-    .bag {
-        display: inline;
-        height: 300px;
-        position: relative;
-        right: 25px;
-    }
-    .wrap {
-        flex-direction: row;
-        height: 300px;
-        align-items: center;
-        justify-content: center;
-    }
-    
-}
-@media (min-width: 981px) {
-    .wrap {
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        padding: 0;
-    }
-    .bag {
-        display: inline;
-        height: 300px;
-        position: relative;
-        right: 25px;
-    }
-}
+
+

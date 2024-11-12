@@ -1,8 +1,8 @@
 .footer {
-    background-color: #000000;
+    background-color: #2B2323;
     margin-top: 25px;
     color: #ffffff;
-    height: 250px;
+    height: 280px;
 }
 .wrap {
     display: flex;
@@ -10,29 +10,7 @@
     justify-content: center;
     align-items: center;
 }
-.button {
-    padding: 10px;
-    width: 90%;
-    height: 25%;
-    color: #ece7e4;
-    font-size: 14px;
-    line-height: 1.55;
-    font-weight: 600;
-    border-width: 1px;
-    border-color: #ffffff;
-    border-style: solid;
-    transition:
-        background-color 0.2s ease-in-out,
-        color 0.2s ease-in-out,
-        border-color 0.2s ease-in-out;
-    margin-bottom: 10px;
-    text-align: center;
-    border-radius: 8px;
-}
-.button:hover {
-    background-color: #ece7e4;
-    color: black;
-}
+
 .footerinfo {
     width: 90%;
     font-size: 10px;

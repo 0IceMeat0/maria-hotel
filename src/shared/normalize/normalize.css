@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'PT bold';
     font-size: 700;
-    src: url('./Montserrat-Bold.ttf');
+    src: url('./TrajanPro3Bold.ttf');
 }
 
 @font-face {
     font-family: 'PT regural';
     font-size: 400;
     font-style: normal;
-    src: url('./Montserrat-Regular.ttf');
+    src: url('./ofont.ru_Trajan.ttf');
 }
 *,
 *::before,
@@ -42,6 +42,7 @@ ul {
     color: inherit;
 }
 button {
+    
     cursor: pointer;
 }
 html {

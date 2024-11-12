@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 650px;
+    height: 100lvh;
     font-family: 'PT regural';
     display: flex;
     flex-direction: column;
@@ -23,18 +23,15 @@
 
 .title,
 .wrap,
-.button,
-.list,
-.item,
-.icon,
-.iconBlock {
+.button{
     position: relative;
     z-index: 1;
 }
 .title {
+    font-family: 'PT bold';
     margin: auto;
-    margin-top: 130px;
-    color: white;
+
+    color: #EBE8DF;
 }
 .wrap {
     display: flex;
@@ -42,78 +39,8 @@
     justify-content: flex-start;
     align-items: center;
 }
-.button {
-    padding: 10px;
-    width: 90%;
-    height: 25%;
-    color: #ece7e4;
-    font-size: 14px;
-    line-height: 1.55;
-    font-weight: 600;
-    border-width: 1px;
-    border-color: #ffffff;
-    border-style: solid;
-    transition:
-        background-color 0.2s ease-in-out,
-        color 0.2s ease-in-out,
-        border-color 0.2s ease-in-out;
-    margin-bottom: 35px;
-    border-radius: 8px;
-}
-.button:hover {
-    background-color: #ece7e4;
-    color: black;
-}
-.list {
-    width: 90%;
-    background-color: #ece7e4;
-    padding: 15px;
-    display: flex;
-    margin-bottom: 15px;
-    justify-content: center;
-    align-items: flex-end;
-    border-radius: 8px;
-    text-size-adjust: auto;
-    transform-origin: center center;
-    line-height: 9px;
-}
-.item {
-    width: 25%;
-    font-size: 9px;
-    font-weight: 700;
-    margin-right: 12px;
-}
-.item:first-child {
-    margin-left: 10px;
-}
-.item:last-child {
-    margin-right: 0;
-}
-.item:nth-child(3n-1) .iconBlock {
-    width: 80px;
-}
-.item:nth-child(3n) .iconBlock {
-    width: 80px;
-}
-.iconBlock {
-    height: 25px;
-}
 
-.icon {
-    width: 60%;
-}
-.item:first-child .icon {
-    width: 56%;
-}
-.item:nth-child(3n) .icon {
-    width: 52%;
-}
-.item:nth-child(2n) .icon {
-    width: 52%;
-}
-.item:last-child .icon {
-    width: 80%;
-}
+
 .linkBlock {
     display: none;
 }
@@ -122,19 +49,14 @@
         width: 450px;
         margin-bottom: 10%;
     }
-    .list {
-        width: 450px;
-    }
+  
 }
 @media (min-width: 981px) {
     .button {
         width: 450px;
         margin-bottom: 15px;
     }
-    .list {
-        width: 650px;
-        margin-bottom: 3%;
-    }
+  
     .wrap {
         flex-direction: column;
     }

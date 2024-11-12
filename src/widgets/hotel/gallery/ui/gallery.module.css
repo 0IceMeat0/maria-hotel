@@ -1,0 +1,115 @@
+
+.wrap {
+    padding: 30px;
+    background-color: #fff;
+    font-family: 'PT regural', sans-serif;
+    line-height: 1.6;
+    padding-top: 60px;
+    position: relative;
+  }
+  .buttonBack { position: fixed;
+     top: 20px; 
+     left: 20px; 
+     padding: 8px 20px; 
+     background-color: #2B2323; 
+     color: #fff; font-size: 16px; 
+     font-weight: 600; 
+     border-radius: 25px; 
+     text-decoration: none; 
+     display: flex; 
+     align-items: center; 
+     justify-content: center; 
+     transition: background-color 0.3s ease, transform 0.2s ease; 
+     z-index: 1000; }
+  .description h2, .description h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .description ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .description ul li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .description ul li::before {
+    content: '▸';
+    color: #2B2323;
+    margin-right: 8px;
+  }
+  
+  /* Стили для кнопки "Забронировать" */
+  .buttonBron {
+    padding: 12px 30px;
+    display: inline-block;
+    width: auto;
+    background-color: #2B2323;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .buttonBron:hover {
+    background-color: #2B2323;
+    transform: translateY(-2px);
+  }
+  
+  .buttonBron:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 87, 51, 0.6);
+  }
+  
+  /* Стили для заголовков внутри описания */
+  .description h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .description h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2B2323;
+    margin-bottom: 12px;
+  }
+  
+  /* Стили для улучшения структуры галереи */
+  .embla {
+    margin-bottom: 30px;
+  }
+  
+  /* Адаптивность для мобильных */
+  @media (max-width: 768px) {
+    .buttonBron {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    .description p {
+      font-size: 1rem;
+    }
+  
+    .description h2, .description h3 {
+      font-size: 1.4rem;
+    }
+}
+

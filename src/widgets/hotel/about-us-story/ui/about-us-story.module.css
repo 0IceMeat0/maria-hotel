@@ -1,0 +1,55 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-bottom: 0;
+    height: 40lvh;
+}
+
+.block {
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+.title {
+    font-family: 'PT bold';
+    font-size: 18px;
+    margin-bottom: 30px;   
+}
+.titledoprow{
+    font-size: 14px;
+}
+@media (min-width: 500px) and (max-width: 980px) {
+   .wrap{
+    align-items: flex-end;
+   }
+    .button, .buttonMore {
+        width: 250px;
+    } 
+}
+
+@media (min-width: 981px) {
+     .button, .buttonMore {
+        width: 250px;
+    }
+    .wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flexButtons {
+        flex-direction: row;
+        gap: 22px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .titledoprow {
+        position: relative;
+        left: 0;
+        font-size: 20px;
+    }
+}

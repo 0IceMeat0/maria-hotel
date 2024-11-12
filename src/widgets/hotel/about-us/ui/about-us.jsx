@@ -1,4 +1,4 @@
-import { insta, telegram, vk, whatsapp } from '@/shared/assets';
+import { telegram, whatsapp } from '@/shared/assets';
 
 import styles from './about-us.module.css';
 
@@ -6,33 +6,15 @@ export const AboutUs = () => {
     return (
         <div id="contacts" className={styles.wrap}>
             <div className={styles.block}>
-                <div>
-                    <div className={styles.titlePage}>
-                        Жизнь в Lesnoy Pereulok
-                    </div>
-
-                    <div className={styles.buttonContainer}>
-                        <button className={styles.button}>
-                            <img src={vk} className={styles.vk} alt="vk" />
-                            Подписаться
-                        </button>
-                        <button className={styles.button}>
-                            <img
-                                src={insta}
-                                className={styles.insta}
-                                alt="insta"
-                            />
-                            Подписаться
-                        </button>
-                    </div>
-                </div>
                 <div className={styles.contactInfo}>
                     <h2 className={styles.titleBlock}>Контакты</h2>
                     <div className={styles.address}>
-                        г. Чикиряу, ул. Лермонтова 228
+                        Республика Башкортостан, Абзелиловский район,
+                        Ташбулатовский сельсовет, деревня Зелёная Поляна,
+                        переулок Лесной, дом 5
                     </div>
                     <a className={styles.phoneNumber} href="tel:89884702074">
-                        8-988-470-20-74
+                        +7 (000) 000-00-00
                     </a>
 
                     <div className={styles.socialLinks}>
