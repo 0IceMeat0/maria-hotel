@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <div className={styles.wrap}>
             <h1 className={styles.title}>
-                <Link to="/">Lesnoy Pereulok</Link>
+                <Link to="/">LESNOY PEREULOK</Link>
             </h1>
             <div className={styles.text}>Дорогой гость!</div>
             <div className={styles.text}>

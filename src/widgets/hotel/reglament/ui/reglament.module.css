@@ -8,6 +8,7 @@
     height: 100lvh;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     position: relative;
 }
 .wrap:before {
@@ -21,10 +22,6 @@
 	right: 0;
 	bottom: 0;
 	background-color:rgba(0, 0, 0, .5);
-}
-.link{
-    cursor: pointer;
-    padding: 25px;
 }
 
 

@@ -7,12 +7,17 @@ export const Reglament = () => {
     };
 
     return (
-        <div className={styles.wrap} onClick={scrollToTop} id="ysloviya">
+        <Link
+            to="/gallery"
+            className={styles.wrap}
+            onClick={scrollToTop}
+            id="reglament"
+        >
             <div className={styles.block}>
                 <Link to="/gallery" className={styles.link}>
                     Домик
                 </Link>
             </div>
-        </div>
+        </Link>
     );
 };

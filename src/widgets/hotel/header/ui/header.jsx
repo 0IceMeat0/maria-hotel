@@ -4,11 +4,8 @@ export const Header = () => {
     return (
         <div className={styles.block}>
             <div className={styles.linkBlock}>
-                <a className={styles.link} href="#places">
-                    Номера
-                </a>
-                <a className={styles.link} href="#places">
-                    Территория
+                <a className={styles.link} href="#reglament">
+                    Домик
                 </a>
                 <a className={styles.link} href="#ysloviya">
                     Условия размещения
@@ -17,7 +14,7 @@ export const Header = () => {
                     Адрес и контакты
                 </a>
             </div>
-            <h1 className={styles.title}>Lesnoy Pereulok</h1>
+            <h1 className={styles.title}>LESNOY PEREULOK</h1>
         </div>
     );
 };

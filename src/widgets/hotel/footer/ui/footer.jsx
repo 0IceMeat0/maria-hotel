@@ -1,27 +1,33 @@
-import { Link } from 'react-router-dom';
 import styles from './footer.module.css';
 
 export const Footer = () => {
+    const linkTransleta = link => {
+        setTimeout(() => {
+            const element = document.getElementById(link);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 0);
+    };
     return (
         <div className={styles.footer}>
-            <div className={styles.title}>Lesnoy Pereulok</div>
+            <div className={styles.title}>LESNOY PEREULOK</div>
             <div className={styles.footerBlock}>
                 <ul className={styles.navList}>
                     <li className={styles.item}>
-                        <a href="#places">Номера</a>
+                        <a onClick={() => linkTransleta('reglament')}>Домик</a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#places">Ресторан</a>
-                    </li>
-                    <li className={styles.item}>
-                        <a href="#contacts">Контакты</a>
+                        <a onClick={() => linkTransleta('contacts')}>
+                            Контакты
+                        </a>
                     </li>
                 </ul>
                 <div className={styles.wrap}>
                     <div className={styles.footerinfo}>
-                        2023 - 2024 © Корпорация Lesnoy Pereulok. Все права
+                        2023 - 2024 © Корпорация LESNOY PEREULOK. Все права
                         защищены. Конфиденциальная информация, являющаяся
-                        собственностью корпорации Lesnoy Pereulok
+                        собственностью корпорации LESNOY PEREULOK
                     </div>
                 </div>
             </div>

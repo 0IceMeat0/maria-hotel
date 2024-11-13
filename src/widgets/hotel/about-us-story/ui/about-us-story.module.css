@@ -2,8 +2,18 @@
     display: flex;
     flex-direction: column;
     margin: 25px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     height: 40lvh;
+    position: relative;
+}
+.block::after {
+    content: ''; 
+    position: absolute;
+    bottom: 1; 
+    left: 0; 
+    right: 0; 
+    height: 1px; 
+    background-color: #2B2323; 
 }
 
 .block {
@@ -18,6 +28,7 @@
 }
 .titledoprow{
     font-size: 14px;
+    height: 130px;
 }
 @media (min-width: 500px) and (max-width: 980px) {
    .wrap{
