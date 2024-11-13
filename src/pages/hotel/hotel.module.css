@@ -45,26 +45,7 @@
     position: relative;
 }
 
-@media (min-width: 981px) {
-    .button {
-        width: 450px;
-        margin-bottom: 15px;
-    }
-    .list {
-        width: 650px;
-        margin-bottom: 3%;
-    }
-    .wrap {
-        flex-direction: column;
-    }
-   
-}
 
-@media (min-width: 981px) {
-    .button {
-        display: none;
-    }
-}
 .wrapBron {
     display: flex;
     justify-content: center;
@@ -89,4 +70,26 @@
     position: fixed;
     bottom: 0;
     z-index: 200;
+}
+
+@media (min-width: 981px) {
+    .button {
+        width: 450px;
+        margin-bottom: 15px;
+    }
+    .list {
+        width: 650px;
+        margin-bottom: 3%;
+    }
+    .wrap {
+     
+    }
+    .button {
+        display: none;
+    }
+    .buttonBron{
+        width: 20%;
+        right: 10;
+       
+    }
 }

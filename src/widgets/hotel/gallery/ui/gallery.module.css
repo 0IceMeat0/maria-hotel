@@ -80,15 +80,13 @@
   
   /* Стили для заголовков внутри описания */
   .description h2 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: 'PT bold';
     color: #333;
     margin-bottom: 15px;
   }
   
   .description h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-family: 'PT bold';
     color: #2B2323;
     margin-bottom: 12px;
   }

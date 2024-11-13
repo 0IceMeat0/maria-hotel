@@ -28,7 +28,7 @@ function Hotel() {
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
             }
-        }, 0);
+        }, 100);
     };
     const handleClick = e => {
         e.preventDefault();
