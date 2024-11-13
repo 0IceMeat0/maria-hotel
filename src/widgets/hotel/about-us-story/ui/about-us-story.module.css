@@ -43,10 +43,9 @@
      .button, .buttonMore {
         width: 250px;
     }
-    .wrap {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .block {
+        margin: auto;
+        width: 550px;
     }
 
     .flexButtons {
@@ -55,7 +54,7 @@
     }
 
     .title {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .titledoprow {
