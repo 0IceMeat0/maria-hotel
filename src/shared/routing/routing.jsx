@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
 import { ErrorBoundaryLayout } from '../error-boundary';
-import { HotelSkeleton } from '../ui/skeleton/ui/skeleton-hotel';
+import { HotelSkeleton, GallerySkeleton } from '../ui/skeleton';
 
 const Hotel = React.lazy(() => import('@/pages/hotel/hotel'));
 const HotelHelper = React.lazy(
@@ -11,7 +11,9 @@ const HotelHelper = React.lazy(
 const DinamicArendaComponent = React.lazy(
     () => import('@/widgets/hotel-helper/rent/ui/dynamic-rent'),
 );
-const Gallery = React.lazy(() => import('../../widgets/hotel/gallery'));
+const Gallery = React.lazy(
+    () => import('../../widgets/hotel/gallery/ui/gallery.jsx'),
+);
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -48,7 +50,7 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 element: (
-                    <ErrorBoundaryLayout fallback={<HotelSkeleton />}>
+                    <ErrorBoundaryLayout fallback={<GallerySkeleton />}>
                         <Gallery />
                     </ErrorBoundaryLayout>
                 ),

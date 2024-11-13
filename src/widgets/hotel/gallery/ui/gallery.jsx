@@ -2,7 +2,7 @@ import EmblaCarousel from './carousel/emblaCarousel';
 import styles from './gallery.module.css';
 import { Link } from 'react-router-dom';
 
-export const Gallery = () => {
+const Gallery = () => {
     const OPTIONS = {};
     const SLIDE_COUNT = 10;
     const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
@@ -123,3 +123,4 @@ export const Gallery = () => {
         </div>
     );
 };
+export default Gallery;
