@@ -42,7 +42,7 @@
   .description ul li {
     font-size: 1rem;
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   
   .description ul li::before {
@@ -112,4 +112,41 @@
       font-size: 1.4rem;
     }
 }
+/* Основной контейнер */
 
+
+.description h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Уменьшаем пространство между абзацами */
+}
+
+/* Стили для заголовков h3 */
+.description h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Стили для списков */
+.description ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.description li {
+    font-size: 16px;
+    margin-bottom: 0; /* Уменьшаем отступы между пунктами списка */
+}
+
+/* Стили для ID yslovia */
+#yslovia {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}

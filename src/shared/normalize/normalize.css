@@ -31,6 +31,7 @@ div {
 }
 button,
 a,
+li,
 ul {
     margin: 0;
     padding: 0;
@@ -40,7 +41,6 @@ ul {
     list-style: none;
     text-decoration: none;
     font: inherit;
-
     color: inherit;
 }
 button {
