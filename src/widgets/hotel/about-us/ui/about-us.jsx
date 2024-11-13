@@ -14,7 +14,7 @@ export const AboutUs = () => {
                         переулок Лесной, дом 5
                     </div>
                     <a className={styles.phoneNumber} href="tel:89884702074">
-                        +7 (000) 000-00-00
+                        +7(000) 000 00 00
                     </a>
 
                     <div className={styles.socialLinks}>
@@ -41,7 +41,7 @@ export const AboutUs = () => {
             <iframe
                 className={styles.iframe}
                 title="Yandex Map"
-                src="https://yandex.ru/map-widget/v1/?ll=92.891336%2C56.015638&mode=whatshere&whatshere%5Bpoint%5D=92.891187%2C56.015250&whatshere%5Bzoom%5D=17&z=17.98"
+                src="https://yandex.ru/map-widget/v1/?ll=58.619600%2C53.608008&z=19.45"
                 width="100%"
                 height="400"
                 allowFullScreen={true}

@@ -13,11 +13,7 @@ export const Reglament = () => {
             onClick={scrollToTop}
             id="reglament"
         >
-            <div className={styles.block}>
-                <Link to="/gallery" className={styles.link}>
-                    Домик
-                </Link>
-            </div>
+            <div className={styles.block}>Домик</div>
         </Link>
     );
 };

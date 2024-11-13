@@ -130,7 +130,6 @@
   opacity: 0.8; 
 }
 
-/* Правим стиль для основной картинки */
 .embla__slide__number {
   background-color: transparent;
   display: flex;
@@ -142,11 +141,11 @@
 }
 
 .embla__slide__number img {
-  width: 100%; /* Обеспечиваем, чтобы картинка заполнила весь контейнер */
+  width: 100%; 
   height: auto;
-  max-height: 100%; /* Картинка будет масштабироваться по ширине и высоте */
+  max-height: 100%; 
   border-radius: 8px;
-  object-fit: contain; /* Изображение будет адаптироваться, сохраняя пропорции */
+  object-fit: contain; 
   transition: transform 1s ease;
 }
 
