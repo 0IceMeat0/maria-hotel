@@ -29,6 +29,7 @@
 }
 .modalButton {
     margin-bottom: 15px;
+    cursor: pointer;
 }
 .imgicons {
     width: 40px;
@@ -70,6 +71,7 @@
     position: fixed;
     bottom: 0;
     z-index: 200;
+    cursor: pointer;
 }
 
 @media (min-width: 981px) {

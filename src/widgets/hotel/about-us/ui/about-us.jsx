@@ -14,7 +14,7 @@ export const AboutUs = () => {
                         переулок Лесной, дом 5
                     </div>
                     <a className={styles.phoneNumber} href="tel:89884702074">
-                        +7(000) 000 00 00
+                        +7 932 012 12 53
                     </a>
 
                     <div className={styles.socialLinks}>
@@ -26,7 +26,10 @@ export const AboutUs = () => {
                             />
                             <div className={styles.linkText}>Telegram</div>
                         </a>
-                        <a href="#1" className={styles.link}>
+                        <a
+                            href="https://wa.me/79320121253?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C"
+                            className={styles.link}
+                        >
                             <img
                                 src={whatsapp}
                                 className={styles.whatsapp}
