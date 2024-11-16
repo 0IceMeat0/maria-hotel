@@ -72,3 +72,16 @@
   .embla__dot, .embla__dotSelected {
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
+  @media (min-width: 500px) and (max-width: 980px) {
+    .title{
+      font-size: 25px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+  }
+  @media (min-width: 981px) {
+    .title{
+      margin-bottom: 60px;
+    }
+  }
