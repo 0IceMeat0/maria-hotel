@@ -3,7 +3,7 @@
     flex-direction: column;
     margin: 25px;
     margin-bottom: 50px;
-    height: 40lvh;
+    height: 300px;
     position: relative;
 }
 .block::after {
@@ -15,15 +15,13 @@
     height: 1px; 
     background-color: #2B2323; 
 }
-
 .block {
     margin-bottom: 15px;
-    text-align: center;
-
+ 
 }
 .title {
     font-family: 'PT bold';
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 30px;   
 }
 .titledoprow{
@@ -31,32 +29,42 @@
     height: 130px;
 }
 @media (min-width: 500px) and (max-width: 980px) {
-   .wrap{
-    align-items: flex-end;
-   }
-    .button, .buttonMore {
-        width: 250px;
-    } 
-}
-
-@media (min-width: 981px) {
-     .button, .buttonMore {
-        width: 250px;
+    .wrap {
+        height: 450px;
     }
     .block {
         margin: auto;
         width: 550px;
     }
-
     .flexButtons {
         flex-direction: row;
         gap: 22px;
     }
-
     .title {
         font-size: 30px;
     }
+    .titledoprow {
+        position: relative;
+        left: 0;
+        font-size: 20px;
+    }
+}
 
+@media (min-width: 981px) {
+    .wrap {
+        height: 450px;
+    }
+    .block {
+        margin: auto;
+        width: 550px;
+    }
+    .flexButtons {
+        flex-direction: row;
+        gap: 22px;
+    }
+    .title {
+        font-size: 30px;
+    }
     .titledoprow {
         position: relative;
         left: 0;

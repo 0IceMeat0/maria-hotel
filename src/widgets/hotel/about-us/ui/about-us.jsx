@@ -18,7 +18,10 @@ export const AboutUs = () => {
                     </a>
 
                     <div className={styles.socialLinks}>
-                        <a href="#1" className={styles.link}>
+                        <a
+                            href="https://t.me/LesnoyPereulok"
+                            className={styles.link}
+                        >
                             <img
                                 src={telegram}
                                 className={styles.telegram}

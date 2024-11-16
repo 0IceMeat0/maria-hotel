@@ -68,21 +68,27 @@ function Hotel() {
                                 </a>
                             </div>
                             <div className={styles.blockicons}>
-                                <img
-                                    src={insta}
-                                    className={styles.imgicons}
-                                    alt="instagram"
-                                />
-                                <img
-                                    src={whatsappwhite}
-                                    className={styles.imgicons}
-                                    alt="whatsapp"
-                                />
-                                <img
-                                    src={telegramwhite}
-                                    className={styles.imgicons}
-                                    alt="telegram"
-                                />
+                                <a href="https://t.me/LesnoyPereulok">
+                                    <img
+                                        src={insta}
+                                        className={styles.imgicons}
+                                        alt="instagram"
+                                    />
+                                </a>
+                                <a href="https://wa.me/79320121253?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C">
+                                    <img
+                                        src={whatsappwhite}
+                                        className={styles.imgicons}
+                                        alt="whatsapp"
+                                    />
+                                </a>
+                                <a href="https://t.me/LesnoyPereulok">
+                                    <img
+                                        src={telegramwhite}
+                                        className={styles.imgicons}
+                                        alt="telegram"
+                                    />
+                                </a>
                             </div>
                         </Modal>
                     )}
