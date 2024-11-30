@@ -1,15 +1,17 @@
 .wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 25px;
     margin-bottom: 25px;
     height: 300px;
     position: relative;
+    text-align: center;
 }
 .block::after {
     content: ''; 
     position: absolute;
-    bottom: 1; 
+    bottom: 0; 
     left: 0; 
     right: 0; 
     height: 1px; 
@@ -17,11 +19,9 @@
 }
 .block {
     margin-bottom: 15px;
- 
 }
 .title {
-    font-family: 'PT bold';
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 30px;   
 }
 .titledoprow{
@@ -41,7 +41,7 @@
         gap: 22px;
     }
     .title {
-        font-size: 30px;
+        font-size: 20px;
     }
     .titledoprow {
         position: relative;
@@ -63,7 +63,7 @@
         gap: 22px;
     }
     .title {
-        font-size: 30px;
+        font-size: 20px;
     }
     .titledoprow {
         position: relative;

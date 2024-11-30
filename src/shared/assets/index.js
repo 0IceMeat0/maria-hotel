@@ -2,6 +2,10 @@ import houseImg from './img/house.png';
 import room from './img/room.png';
 import room3 from './img/room3.png';
 
+import firstSlideCarousel from './img/firstSlideCarousel.jpg';
+import secondSlideCarousel from './img/secondSlideCarousel.jpg';
+import thirdSlideCarousel from './img/thirdSlideCarousel.jpg';
+
 export { room3, room, houseImg };
 import closewhite from './icons/closewhite.png';
 import close from './icons/close.png';
@@ -14,6 +18,9 @@ import menu from './icons/menu.png';
 import telegramwhite from './icons/telegramwhite.png';
 import whatsappwhite from './icons/whatsappwhite.png';
 export {
+    thirdSlideCarousel,
+    secondSlideCarousel,
+    firstSlideCarousel,
     closewhite,
     close,
     insta,

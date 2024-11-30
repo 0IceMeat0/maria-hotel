@@ -47,7 +47,7 @@ export const AboutUs = () => {
             <iframe
                 className={styles.iframe}
                 title="Yandex Map"
-                src="https://yandex.ru/map-widget/v1/?ll=58.619600%2C53.608008&z=19.45"
+                src="https://yandex.ru/map-widget/v1/?ll=58.620049%2C53.607848&utm_source=share&z=18"
                 width="100%"
                 height="400"
                 allowFullScreen={true}

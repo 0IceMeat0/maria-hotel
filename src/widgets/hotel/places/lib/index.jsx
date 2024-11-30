@@ -1,3 +1,11 @@
-import { houseImg, room, room3 } from '@/shared/assets';
+import {
+    thirdSlideCarousel,
+    secondSlideCarousel,
+    firstSlideCarousel,
+} from '@/shared/assets';
 
-export const srcImages = [houseImg, room, room3];
+export const srcImages = [
+    firstSlideCarousel,
+    secondSlideCarousel,
+    thirdSlideCarousel,
+];

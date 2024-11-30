@@ -20,11 +20,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('@/shared/assets/img/room3.png');
+    background-image: url('@/shared/assets/img/photo_2024-11-30_12-47-31.jpg');
     width: 100%;
-    background-position: center;
+    background-position:center;
+    background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(40%);
+    filter: brightness(50%);
     z-index: -1; 
     background-color: #2b2323;
 }

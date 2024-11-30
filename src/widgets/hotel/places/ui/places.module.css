@@ -17,27 +17,34 @@
 }
 .embla {
     overflow: hidden;
-   
   }
   .embla__container {
     display: flex;
-    gap: 100px;
+ 
   }
+  
   .embla__slide {
     flex: 0 0 100%;
-    width: 120px;
-    height: 400px;
+    height: auto; 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 0;
-   
-  }
-  .img{
-    width: 'inherit';
-    height: 400px;
+      justify-content: center;
   }
 
+  .img {
+    width: 100%;
+    height: auto; 
+  }
+ 
+  
+
+  @media (min-width: 900px) {
+
+    .img {
+      width: 50%;
+      height: auto; 
+    }
+  }
+  
   .embla__dots {
     margin: 20px;
     display: flex;
