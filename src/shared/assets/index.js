@@ -13,7 +13,6 @@ import fourSlideGallery from './img/fourSlideGallery.jpg';
 import fiveSlideGallery from './img/fiveSlideGallery.jpg';
 import sixSlideGallery from './img/sixSlideGallery.jpg';
 import sevenSlideGallery from './img/sevenSlideGallery.jpg';
-import eightSlideGallery from './img/eightSlideGallery.jpg';
 import nineSlideGallery from './img/nineSlideGallery.jpg';
 import tenSlideGallery from './img/tenSlideGallery.jpg';
 import elevenSlideGallery from './img/elevenSlideGallery.jpg';
@@ -40,7 +39,6 @@ export {
     fiveSlideGallery,
     sixSlideGallery,
     sevenSlideGallery,
-    eightSlideGallery,
     firstSlideGallery,
     secondSlideGallery,
     thirdSlideGallery,
