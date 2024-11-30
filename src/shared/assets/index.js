@@ -33,7 +33,7 @@ import telegramwhite from './icons/telegramwhite.png';
 import whatsappwhite from './icons/whatsappwhite.png';
 export {
     twelveSlideGallery,
-    elevenlideGallery,
+    elevenSlideGallery,
     tenSlideGallery,
     nineSlideGallery,
     fourSlideGallery,
