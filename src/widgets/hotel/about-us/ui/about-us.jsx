@@ -1,4 +1,4 @@
-import { telegram, whatsapp } from '@/shared/assets';
+import { telegram, whatsapp1 } from '@/shared/assets';
 
 import styles from './about-us.module.css';
 
@@ -34,7 +34,7 @@ export const AboutUs = () => {
                             className={styles.link}
                         >
                             <img
-                                src={whatsapp}
+                                src={whatsapp1}
                                 className={styles.whatsapp}
                                 alt="Логотип WhatsApp"
                             />

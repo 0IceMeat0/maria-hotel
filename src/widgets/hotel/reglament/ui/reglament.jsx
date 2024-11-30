@@ -13,7 +13,7 @@ export const Reglament = () => {
             onClick={scrollToTop}
             id="reglament"
         >
-            <div className={styles.block}>Домик</div>
+            <div className={styles.block}>Подробнее...</div>
         </Link>
     );
 };

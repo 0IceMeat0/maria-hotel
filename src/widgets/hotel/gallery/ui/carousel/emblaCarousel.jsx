@@ -41,7 +41,7 @@ const EmblaCarousel = ({ slides, options }) => {
                     {slides.map((_, index) => (
                         <div className={styles.embla__slide} key={index}>
                             <div className={styles.embla__slide__number}>
-                                <img src={room} alt="" />
+                                <img src={_} alt="" />
                             </div>
                         </div>
                     ))}
@@ -59,7 +59,7 @@ const EmblaCarousel = ({ slides, options }) => {
                                 key={index}
                                 onClick={() => onThumbClick(index)}
                                 selected={index === selectedIndex}
-                                index={index}
+                                index={_}
                             />
                         ))}
                     </div>

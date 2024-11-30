@@ -1,6 +1,8 @@
 import styles from './footer.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export const Footer = () => {
+    const navigate = useNavigate();
     const linkTransleta = link => {
         setTimeout(() => {
             const element = document.getElementById(link);
@@ -9,13 +11,23 @@ export const Footer = () => {
             }
         }, 0);
     };
+    const handleClickDom = e => {
+        e.preventDefault();
+        linkTransleta('reglament');
+        setTimeout(() => {
+            navigate('/gallery');
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 0);
+        }, 1000);
+    };
     return (
         <div className={styles.footer}>
             <div className={styles.title}>LESNOY PEREULOK</div>
             <div className={styles.footerBlock}>
                 <ul className={styles.navList}>
                     <li className={styles.item}>
-                        <a onClick={() => linkTransleta('reglament')}>Домик</a>
+                        <a onClick={handleClickDom}>Дом</a>
                     </li>
                     <li className={styles.item}>
                         <a onClick={() => linkTransleta('contacts')}>

@@ -1,6 +1,5 @@
 import styles from './embla.module.css';
 import { memo } from 'react';
-import { room } from '@/shared/assets';
 
 export const Thumb = memo(({ selected, index, onClick }) => {
     return (
@@ -9,7 +8,7 @@ export const Thumb = memo(({ selected, index, onClick }) => {
                 onClick={onClick}
                 className={`${styles.embla_thumbs__slide__number} ${selected ? styles.selected : ''}`}
             >
-                <img src={room} alt="Room" className={styles.thumbImage} />
+                <img src={index} alt="Room" className={styles.thumbImage} />
             </button>
         </div>
     );

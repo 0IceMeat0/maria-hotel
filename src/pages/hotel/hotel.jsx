@@ -30,10 +30,22 @@ function Hotel() {
             }
         }, 100);
     };
+    const handleClickDom = e => {
+        e.preventDefault();
+        linkTransleta('reglament');
+        setTimeout(() => {
+            navigate('/gallery');
+            window.scrollTo(0, 0);
+        }, 1000);
+    };
     const handleClick = e => {
         e.preventDefault();
-        navigate('/gallery');
-        linkTransleta('yslovia');
+        linkTransleta('reglament');
+        setTimeout(() => {
+            navigate('/gallery');
+            window.scrollTo(0, 0);
+            linkTransleta('yslovia');
+        }, 1000);
     };
     return (
         <>
@@ -49,9 +61,9 @@ function Hotel() {
                             <div className={styles.modalBlock}>
                                 <a
                                     className={styles.modalButton}
-                                    onClick={() => linkTransleta('reglament')}
+                                    onClick={handleClickDom}
                                 >
-                                    Домик
+                                    Дом
                                 </a>
                                 <a
                                     className={styles.modalButton}
