@@ -12,7 +12,7 @@ import {
     eightSlideGallery,
     nineSlideGallery,
     tenSlideGallery,
-    elevenlideGallery,
+    elevenSlideGallery,
     twelveSlideGallery,
 } from '@/shared/assets';
 
@@ -30,7 +30,7 @@ const Gallery = () => {
         eightSlideGallery,
         nineSlideGallery,
         tenSlideGallery,
-        elevenlideGallery,
+        elevenSlideGallery,
         twelveSlideGallery,
     ];
 
