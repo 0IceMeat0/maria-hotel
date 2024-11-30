@@ -5,12 +5,34 @@ import {
     thirdSlideGallery,
     secondSlideGallery,
     firstSlideGallery,
+    fourSlideGallery,
+    fiveSlideGallery,
+    sixSlideGallery,
+    sevenSlideGallery,
+    eightSlideGallery,
+    nineSlideGallery,
+    tenSlideGallery,
+    elevenlideGallery,
+    twelveSlideGallery,
 } from '@/shared/assets';
 
 const Gallery = () => {
     const OPTIONS = {};
 
-    const SLIDES = [firstSlideGallery, secondSlideGallery, thirdSlideGallery];
+    const SLIDES = [
+        firstSlideGallery,
+        secondSlideGallery,
+        thirdSlideGallery,
+        fourSlideGallery,
+        fiveSlideGallery,
+        sixSlideGallery,
+        sevenSlideGallery,
+        eightSlideGallery,
+        nineSlideGallery,
+        tenSlideGallery,
+        elevenlideGallery,
+        twelveSlideGallery,
+    ];
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);

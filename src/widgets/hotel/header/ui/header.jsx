@@ -17,15 +17,19 @@ export const Header = () => {
         navigate('/gallery');
         linkTransleta('yslovia');
     };
-
+    const handleClickDom = e => {
+        e.preventDefault();
+        linkTransleta('reglament');
+        setTimeout(() => {
+            navigate('/gallery');
+            window.scrollTo(0, 0);
+        }, 1000);
+    };
     return (
         <div className={styles.block}>
             <div className={styles.linkBlock}>
-                <a
-                    className={styles.link}
-                    onClick={() => linkTransleta('reglament')}
-                >
-                    Домик
+                <a className={styles.link} onClick={handleClickDom}>
+                    Дом
                 </a>
                 <a className={styles.link} onClick={handleClick}>
                     Условия размещения

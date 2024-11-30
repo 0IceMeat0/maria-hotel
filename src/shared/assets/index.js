@@ -9,6 +9,15 @@ import thirdSlideCarousel from './img/thirdSlideCarousel.jpg';
 import firstSlideGallery from './img/firstSlideGallery.jpg';
 import secondSlideGallery from './img/secondSlideGallery.jpg';
 import thirdSlideGallery from './img/thirdSlideGallery.jpg';
+import fourSlideGallery from './img/fourSlideGallery.jpg';
+import fiveSlideGallery from './img/fiveSlideGallery.jpg';
+import sixSlideGallery from './img/sixSlideGallery.jpg';
+import sevenSlideGallery from './img/sevenSlideGallery.jpg';
+import eightSlideGallery from './img/eightSlideGallery.jpg';
+import nineSlideGallery from './img/nineSlideGallery.jpg';
+import tenSlideGallery from './img/tenSlideGallery.jpg';
+import elevenSlideGallery from './img/elevenSlideGallery.jpg';
+import twelveSlideGallery from './img/twelveSlideGallery.jpg';
 
 export { room3, room, houseImg };
 import closewhite from './icons/closewhite.png';
@@ -23,6 +32,15 @@ import menu from './icons/menu.png';
 import telegramwhite from './icons/telegramwhite.png';
 import whatsappwhite from './icons/whatsappwhite.png';
 export {
+    twelveSlideGallery,
+    elevenlideGallery,
+    tenSlideGallery,
+    nineSlideGallery,
+    fourSlideGallery,
+    fiveSlideGallery,
+    sixSlideGallery,
+    sevenSlideGallery,
+    eightSlideGallery,
     firstSlideGallery,
     secondSlideGallery,
     thirdSlideGallery,
