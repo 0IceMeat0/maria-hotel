@@ -21,17 +21,16 @@ const Gallery = () => {
 
     const SLIDES = [
         firstSlideGallery,
-        secondSlideGallery,
-        thirdSlideGallery,
-        fourSlideGallery,
         fiveSlideGallery,
         sixSlideGallery,
-        firstSlideCarousel,
         sevenSlideGallery,
         nineSlideGallery,
         tenSlideGallery,
         elevenSlideGallery,
         twelveSlideGallery,
+        secondSlideGallery,
+        thirdSlideGallery,
+        fourSlideGallery,
     ];
 
     const scrollToTop = () => {
