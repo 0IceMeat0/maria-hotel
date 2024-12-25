@@ -13,7 +13,7 @@ export const AboutUs = () => {
                         Ташбулатовский сельсовет, деревня Зелёная Поляна,
                         переулок Лесной, дом 5
                     </div>
-                    <a className={styles.phoneNumber} href="tel:89884702074">
+                    <a className={styles.phoneNumber} href="tel:89320121253">
                         +7 932 012 12 53
                     </a>
 
@@ -47,7 +47,7 @@ export const AboutUs = () => {
             <iframe
                 className={styles.iframe}
                 title="Yandex Map"
-                src="https://yandex.ru/map-widget/v1/?ll=58.620049%2C53.607848&utm_source=share&z=18"
+                src="https://yandex.ru/map-widget/v1/?ll=58.620217%2C53.607808&mode=poi&poi%5Bpoint%5D=58.620043%2C53.607846&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D24849498153&z=20.17"
                 width="100%"
                 height="400"
                 allowFullScreen={true}
