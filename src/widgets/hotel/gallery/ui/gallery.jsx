@@ -9,7 +9,6 @@ import {
     fiveSlideGallery,
     sixSlideGallery,
     sevenSlideGallery,
-    firstSlideCarousel,
     nineSlideGallery,
     tenSlideGallery,
     elevenSlideGallery,

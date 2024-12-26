@@ -13,7 +13,7 @@ import {
 import { insta, menu, telegramwhite, whatsappwhite } from '@/shared/assets';
 import Modal from '@/shared/ui/modal/modal';
 import styles from './hotel.module.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Hotel() {
     const [isModalOpenMenu, setModalOpenMenu] = useState(false);

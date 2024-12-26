@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { room } from '@/shared/assets';
 import styles from './rent.module.css';
 
 export const Rent = () => {
@@ -21,7 +20,6 @@ export const Rent = () => {
                             Аренда Игровых приставок
                         </div>
                     </div>
-                    <img className={styles.linkFoto} src={room} alt="" />
                 </Link>
             </div>
             <div>
@@ -30,7 +28,6 @@ export const Rent = () => {
                     className={styles.link}
                     onClick={scrollToTop}
                 >
-                    <img className={styles.linkFotoForest} src={room} alt="" />
                     <div className={styles.linkText}>Куда можно сходить</div>
                 </Link>
             </div>
@@ -40,7 +37,6 @@ export const Rent = () => {
                     className={styles.link}
                     onClick={scrollToTop}
                 >
-                    <img className={styles.linkFoto} src={room} alt="" />
                     <div>
                         <div className={styles.linkTitleSecond}>
                             Аренда Инвентаря для Туризма
@@ -54,7 +50,6 @@ export const Rent = () => {
                     className={styles.link}
                     onClick={scrollToTop}
                 >
-                    <img className={styles.linkFotoZOO} src={room} alt="" />
                     <div className={styles.linkText}>Помоги Квоккам</div>
                 </Link>
             </div>

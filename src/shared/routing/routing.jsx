@@ -23,27 +23,27 @@ export const router = createBrowserRouter([
             </ErrorBoundaryLayout>
         ),
     },
-    {
-        path: 'qrcode',
-        children: [
-            {
-                index: true,
-                element: (
-                    <ErrorBoundaryLayout fallback={<HotelSkeleton />}>
-                        <HotelHelper />
-                    </ErrorBoundaryLayout>
-                ),
-            },
-            {
-                path: ':id',
-                element: (
-                    <ErrorBoundaryLayout fallback={<HotelSkeleton />}>
-                        <DinamicArendaComponent />
-                    </ErrorBoundaryLayout>
-                ),
-            },
-        ],
-    },
+    // {
+    //     path: 'qrcode',
+    //     children: [
+    //         {
+    //             index: true,
+    //             element: (
+    //                 <ErrorBoundaryLayout fallback={<HotelSkeleton />}>
+    //                     <HotelHelper />
+    //                 </ErrorBoundaryLayout>
+    //             ),
+    //         },
+    //         {
+    //             path: ':id',
+    //             element: (
+    //                 <ErrorBoundaryLayout fallback={<HotelSkeleton />}>
+    //                     <DinamicArendaComponent />
+    //                 </ErrorBoundaryLayout>
+    //             ),
+    //         },
+    //     ],
+    // },
     {
         path: 'gallery',
         children: [

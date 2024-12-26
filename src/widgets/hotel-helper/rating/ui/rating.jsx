@@ -1,10 +1,8 @@
-import { room } from '@/shared/assets';
 import styles from './rating.module.css';
 
 export const Rating = () => {
     return (
         <div className={styles.wrap}>
-            <img src={room} className={styles.img} alt="" />
             <h3 className={styles.title}>Вам все нравится у нас?</h3>
             <div className={styles.text}>
                 Если что-то пошло не так, дайте нам знать. Мы хотим оставить

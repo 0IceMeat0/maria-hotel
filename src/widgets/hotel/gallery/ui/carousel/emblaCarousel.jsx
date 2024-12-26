@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { Thumb } from './emblaThumbsButton';
 import styles from './embla.module.css';
-import { room } from '@/shared/assets';
 
 const EmblaCarousel = ({ slides, options }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
