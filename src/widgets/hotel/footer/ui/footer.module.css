@@ -1,5 +1,5 @@
 .footer {
-    background-color: #2B2323;
+    background-color: #2b2323;
     margin-top: 25px;
     color: #ffffff;
     height: 280px;
@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2B2323;
+    background-color: #2b2323;
 }
 
 .footerinfo {

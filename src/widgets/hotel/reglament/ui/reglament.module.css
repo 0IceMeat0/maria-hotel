@@ -2,15 +2,17 @@
     display: flex;
     flex-direction: column;
     padding: 25px;
-    color: #ece7e4; 
+    color: #ece7e4;
     height: 100vh;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     position: relative;
     font-size: 20px;
-   
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7); 
+
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.7),
+        0 0 20px rgba(255, 255, 255, 0.7);
 }
 
 .wrap::before {
@@ -22,10 +24,10 @@
     bottom: 0;
     background-image: url('@/shared/assets/img/photo_2024-11-30_12-47-31.jpg');
     width: 100%;
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(50%);
-    z-index: -1; 
+    z-index: -1;
     background-color: #2b2323;
 }

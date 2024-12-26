@@ -23,7 +23,7 @@
 
 .title,
 .wrap,
-.button{
+.button {
     position: relative;
     z-index: 1;
 }
@@ -31,7 +31,7 @@
     font-family: 'PT bold';
     margin: auto;
     font-size: 30px;
-    color: #EBE8DF;
+    color: #ebe8df;
 }
 .wrap {
     display: flex;
@@ -39,7 +39,6 @@
     justify-content: flex-start;
     align-items: center;
 }
-
 
 .linkBlock {
     display: none;
@@ -49,14 +48,13 @@
         width: 450px;
         margin-bottom: 10%;
     }
-  
 }
 @media (min-width: 981px) {
     .button {
         width: 450px;
         margin-bottom: 15px;
     }
-  
+
     .wrap {
         flex-direction: column;
     }

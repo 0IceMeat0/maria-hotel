@@ -9,22 +9,22 @@
     text-align: center;
 }
 .block::after {
-    content: ''; 
+    content: '';
     position: absolute;
-    bottom: 0; 
-    left: 0; 
-    right: 0; 
-    height: 1px; 
-    background-color: #2B2323; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #2b2323;
 }
 .block {
     margin-bottom: 15px;
 }
 .title {
     font-size: 14px;
-    margin-bottom: 30px;   
+    margin-bottom: 30px;
 }
-.titledoprow{
+.titledoprow {
     font-size: 14px;
     height: 130px;
 }

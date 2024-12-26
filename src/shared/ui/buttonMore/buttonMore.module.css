@@ -57,9 +57,8 @@
     transform: rotate(180deg);
 }
 .modal {
-
 }
-.wrap{
+.wrap {
     display: flex;
     width: 100%;
     justify-content: space-around;

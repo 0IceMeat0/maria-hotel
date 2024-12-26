@@ -18,7 +18,6 @@
     font-family: 'PT regural';
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
 }
 :active,
 :hover,
@@ -27,7 +26,6 @@
     outline-offset: 0;
 }
 div {
-   
 }
 button,
 a,
@@ -44,9 +42,8 @@ ul {
     color: inherit;
 }
 button {
-    
     cursor: pointer;
 }
 html {
-    background-color: #EBE8DF ;
+    background-color: #ebe8df;
 }

@@ -1,8 +1,11 @@
 .skeleton {
-    background: linear-gradient(-60deg, #ccc 33%,#ddd, #ccc 66%) right/300% 100%;
+    background: linear-gradient(-60deg, #ccc 33%, #ddd, #ccc 66%) right/300%
+        100%;
     animation: move 1s linear infinite;
-  }
-  
-  @keyframes move {
-    to {background-position: left}
-  }
+}
+
+@keyframes move {
+    to {
+        background-position: left;
+    }
+}
