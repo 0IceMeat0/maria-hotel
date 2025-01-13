@@ -1,62 +1,86 @@
 .footer {
     background-color: #2b2323;
-    margin-top: 25px;
-    color: #ffffff;
-    height: 280px;
-}
-.wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #2b2323;
+    color: #fff;
+    padding: 30px 60px;
+    font-size: 14px;
+    padding-bottom: 80px;
 }
 
-.footerinfo {
-    width: 90%;
-    font-size: 10px;
-    margin-left: 5px;
-}
-.title {
-    padding: 25px;
-    padding-bottom: 15px;
-    text-decoration: underline;
-}
-.navList {
+.container {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 50px;
-    margin-bottom: 25px;
+    gap: 20px;
 }
-.item {
-    width: 50%;
-    padding: 5px;
+
+.companyInfo,
+.contacts,
+.links {
+    flex: 1;
+    min-width: 250px;
 }
-@media (min-width: 981px) {
-    .footer {
-        display: flex;
-        height: 150px;
-        justify-content: center;
-    }
-    .title {
-        width: 200px;
-        padding-right: 0;
-        margin-right: 0;
-    }
-    .navList {
-        flex-wrap: nowrap;
-        position: relative;
-        top: 20%;
-    }
-    .button {
-        width: 55%;
-        height: 45px;
-    }
-    .footerBlock {
-        display: flex;
-    }
-    .footerinfo {
-        position: relative;
-        left: -40%;
-    }
+
+.companyName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.sectionTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contacts p,
+.links ul {
+    margin: 5px 0;
+}
+
+.socials a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ece7e4;
+    text-decoration: none;
+    text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li a {
+    color: #ece7e4;
+    text-decoration: none;
+    text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.footerBottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.footerBottom a {
+    text-decoration: none;
+    text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin: 0 5px;
+    cursor: pointer;
 }
