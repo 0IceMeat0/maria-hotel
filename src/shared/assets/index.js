@@ -17,6 +17,7 @@ import twelveSlideGallery from './img/twelveSlideGallery.jpg';
 import closewhite from './icons/closewhite.png';
 import close from './icons/close.png';
 import insta from './icons/instagram.svg';
+import instaBlack from './icons/insta.png';
 import telegram from './icons/telegram1.svg';
 import whatsapp from './icons/whatsapp.svg';
 import whatsapp1 from './icons/whatsapp1.svg';
@@ -43,6 +44,7 @@ export {
     closewhite,
     close,
     insta,
+    instaBlack,
     whatsapp,
     strelka,
     strelkaBlack,

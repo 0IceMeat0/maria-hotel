@@ -1,4 +1,4 @@
-import { telegram, whatsapp1 } from '@/shared/assets';
+import { telegram, whatsapp1, instaBlack } from '@/shared/assets';
 
 import styles from './about-us.module.css';
 
@@ -39,6 +39,17 @@ export const AboutUs = () => {
                                 alt="Логотип WhatsApp"
                             />
                             <div className={styles.linkText}>WhatsApp</div>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/lesnoy.pereulok?igsh=MXRnZzE0enF5OWVldQ=="
+                            className={styles.link}
+                        >
+                            <img
+                                src={instaBlack}
+                                className={styles.telegram}
+                                alt="instagram"
+                            />
+                            <div className={styles.linkText}>Instagram</div>
                         </a>
                     </div>
                 </div>

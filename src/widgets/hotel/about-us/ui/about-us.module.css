@@ -73,7 +73,9 @@
     font-size: 22px;
     font-family: 'PT bold';
 }
-
+.linkText{
+    font-size: 14px;
+}
 @media (min-width: 981px) {
     .wrap {
         display: flex;
@@ -99,5 +101,8 @@
     }
     .titleIframe {
         display: none;
+    }
+    .linkText{
+        font-size: 16px;
     }
 }
