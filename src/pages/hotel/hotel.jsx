@@ -80,7 +80,7 @@ function Hotel() {
                                 </a>
                             </div>
                             <div className={styles.blockicons}>
-                                <a href="https://t.me/LesnoyPereulok">
+                                <a href="https://www.instagram.com/lesnoy.pereulok?igsh=MXRnZzE0enF5OWVldQ==">
                                     <img
                                         src={insta}
                                         className={styles.imgicons}
