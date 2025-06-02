@@ -8,11 +8,11 @@ import thirdSlideGallery from './img/thirdSlideGallery.jpg';
 import fourSlideGallery from './img/fourSlideGallery.jpg';
 import fiveSlideGallery from './img/fiveSlideGallery.jpg';
 import sixSlideGallery from './img/sixSlideGallery.jpg';
-import sevenSlideGallery from './img/sevenSlideGallery.jpg';
 import nineSlideGallery from './img/nineSlideGallery.jpg';
 import tenSlideGallery from './img/tenSlideGallery.jpg';
 import elevenSlideGallery from './img/elevenSlideGallery.jpg';
 import twelveSlideGallery from './img/twelveSlideGallery.jpg';
+import fiftinSlideGallery from './img/fifty.jpg';
 
 import closewhite from './icons/closewhite.png';
 import close from './icons/close.png';
@@ -34,7 +34,6 @@ export {
     fourSlideGallery,
     fiveSlideGallery,
     sixSlideGallery,
-    sevenSlideGallery,
     firstSlideGallery,
     secondSlideGallery,
     thirdSlideGallery,
@@ -53,4 +52,5 @@ export {
     whatsappwhite,
     telegram,
     whatsapp1,
+    fiftinSlideGallery,
 };

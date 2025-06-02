@@ -8,11 +8,11 @@ import {
     fourSlideGallery,
     fiveSlideGallery,
     sixSlideGallery,
-    sevenSlideGallery,
     nineSlideGallery,
     tenSlideGallery,
     elevenSlideGallery,
     twelveSlideGallery,
+    fiftinSlideGallery,
 } from '@/shared/assets';
 
 const Gallery = () => {
@@ -22,7 +22,6 @@ const Gallery = () => {
         firstSlideGallery,
         fiveSlideGallery,
         sixSlideGallery,
-        sevenSlideGallery,
         nineSlideGallery,
         tenSlideGallery,
         elevenSlideGallery,
@@ -30,6 +29,7 @@ const Gallery = () => {
         secondSlideGallery,
         thirdSlideGallery,
         fourSlideGallery,
+        fiftinSlideGallery,
     ];
 
     const scrollToTop = () => {
